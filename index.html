@@ -197,6 +197,224 @@
             fill: currentColor;
         }
 
+        /* ========== ENCOMENDA ========== */
+        .encomenda {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #111 50%, #0a0a0a 100%);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .encomenda::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 50% 50%, rgba(212, 168, 67, 0.06) 0%, transparent 70%);
+        }
+
+        /* Particles */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: var(--blue-accent);
+            border-radius: 50%;
+            opacity: 0;
+            animation: particle-float 6s ease-in-out infinite;
+        }
+
+        .particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
+        .particle:nth-child(2) { left: 25%; top: 60%; animation-delay: 1s; }
+        .particle:nth-child(3) { left: 40%; top: 30%; animation-delay: 2s; }
+        .particle:nth-child(4) { left: 55%; top: 70%; animation-delay: 0.5s; }
+        .particle:nth-child(5) { left: 70%; top: 25%; animation-delay: 1.5s; }
+        .particle:nth-child(6) { left: 85%; top: 55%; animation-delay: 2.5s; }
+        .particle:nth-child(7) { left: 15%; top: 80%; animation-delay: 3s; }
+        .particle:nth-child(8) { left: 90%; top: 40%; animation-delay: 0.8s; }
+        .particle:nth-child(9) { left: 50%; top: 15%; animation-delay: 1.8s; }
+        .particle:nth-child(10) { left: 35%; top: 85%; animation-delay: 2.2s; }
+        .particle:nth-child(11) { left: 65%; top: 50%; animation-delay: 3.5s; }
+        .particle:nth-child(12) { left: 80%; top: 75%; animation-delay: 0.3s; }
+
+        @keyframes particle-float {
+            0%, 100% { opacity: 0; transform: translateY(0) scale(1); }
+            25% { opacity: 0.8; }
+            50% { opacity: 1; transform: translateY(-30px) scale(1.5); }
+            75% { opacity: 0.6; }
+        }
+
+        .encomenda-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .encomenda-content h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .encomenda-content h2 em {
+            font-style: normal;
+            color: var(--blue-accent);
+        }
+
+        .encomenda-content p {
+            font-size: 1.15rem;
+            color: var(--gray-text);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* 3D Car */
+        .encomenda-car {
+            position: relative;
+            max-width: 550px;
+            margin: 50px auto 0;
+            perspective: 1000px;
+        }
+
+        .encomenda-car-inner {
+            animation: car-float 5s ease-in-out infinite;
+            transform-style: preserve-3d;
+        }
+
+        .encomenda-car-inner img {
+            width: 100%;
+            height: auto;
+            mix-blend-mode: lighten;
+            filter: drop-shadow(0 20px 50px rgba(0,0,0,0.8))
+                   drop-shadow(0 8px 25px rgba(212, 168, 67, 0.2))
+                   brightness(1.15) contrast(1.15);
+            transform: perspective(800px) rotateY(-3deg) rotateX(2deg);
+            transition: transform 0.6s ease, filter 0.6s ease;
+        }
+
+        .encomenda-car-inner:hover img {
+            transform: perspective(800px) rotateY(3deg) rotateX(-1deg) scale(1.04);
+            filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9))
+                   drop-shadow(0 12px 35px rgba(212, 168, 67, 0.35))
+                   brightness(1.2) contrast(1.2);
+        }
+
+        /* Gold glow under car */
+        .encomenda-car-inner::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 15%;
+            right: 15%;
+            height: 50px;
+            background: radial-gradient(ellipse, rgba(212, 168, 67, 0.2) 0%, transparent 70%);
+            filter: blur(20px);
+            animation: glow-pulse 5s ease-in-out infinite;
+        }
+
+        @keyframes car-float {
+            0%, 100% { transform: translateY(0px) rotateZ(0deg); }
+            25% { transform: translateY(-15px) rotateZ(0.3deg); }
+            50% { transform: translateY(-8px) rotateZ(0deg); }
+            75% { transform: translateY(-18px) rotateZ(-0.3deg); }
+        }
+
+        @keyframes glow-pulse {
+            0%, 100% { opacity: 0.4; transform: scaleX(0.85); }
+            50% { opacity: 1; transform: scaleX(1.15); }
+        }
+
+        /* Floating Icons */
+        .floating-icons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .float-icon {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.15;
+            animation: icon-float 6s ease-in-out infinite;
+            filter: drop-shadow(0 0 10px rgba(212, 168, 67, 0.3));
+        }
+
+        .float-icon:nth-child(1) { left: 5%; top: 15%; animation-delay: 0s; animation-duration: 5s; font-size: 2.5rem; }
+        .float-icon:nth-child(2) { right: 8%; top: 20%; animation-delay: 1s; animation-duration: 7s; font-size: 1.8rem; }
+        .float-icon:nth-child(3) { left: 12%; bottom: 20%; animation-delay: 2s; animation-duration: 6s; font-size: 2.2rem; }
+        .float-icon:nth-child(4) { right: 15%; bottom: 25%; animation-delay: 0.5s; animation-duration: 5.5s; font-size: 2rem; }
+        .float-icon:nth-child(5) { left: 25%; top: 10%; animation-delay: 1.5s; animation-duration: 6.5s; font-size: 1.6rem; }
+        .float-icon:nth-child(6) { right: 25%; top: 8%; animation-delay: 3s; animation-duration: 7.5s; font-size: 1.4rem; }
+        .float-icon:nth-child(7) { left: 8%; top: 50%; animation-delay: 2.5s; animation-duration: 5.8s; font-size: 1.8rem; }
+        .float-icon:nth-child(8) { right: 5%; top: 55%; animation-delay: 0.8s; animation-duration: 6.2s; font-size: 2.3rem; }
+
+        @keyframes icon-float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.12; }
+            25% { transform: translateY(-20px) rotate(5deg); opacity: 0.25; }
+            50% { transform: translateY(-10px) rotate(-3deg); opacity: 0.18; }
+            75% { transform: translateY(-25px) rotate(3deg); opacity: 0.3; }
+        }
+
+        /* Encomenda CTA */
+        .encomenda-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 44px;
+            background: linear-gradient(135deg, var(--blue-accent) 0%, #b8912e 100%);
+            color: var(--blue-dark);
+            text-decoration: none;
+            font-size: 1.15rem;
+            font-weight: 800;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 30px rgba(212, 168, 67, 0.3);
+        }
+
+        .encomenda-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 40px rgba(212, 168, 67, 0.5);
+        }
+
+        .encomenda-cta svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--blue-dark);
+        }
+
+        @media (max-width: 768px) {
+            .encomenda {
+                padding: 70px 20px;
+            }
+
+            .float-icon {
+                font-size: 1.2rem !important;
+            }
+
+            .encomenda-car {
+                max-width: 90%;
+            }
+        }
+
         /* ========== STATS ========== */
         .stats {
             display: flex;
@@ -308,11 +526,28 @@
             border-radius: 16px;
             overflow: hidden;
             border: 1px solid rgba(212, 168, 67, 0.15);
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: card-float 6s ease-in-out infinite;
+        }
+
+        .testimonial-card:nth-child(1) { animation-delay: 0s; }
+        .testimonial-card:nth-child(2) { animation-delay: 0.7s; }
+        .testimonial-card:nth-child(3) { animation-delay: 1.4s; }
+        .testimonial-card:nth-child(4) { animation-delay: 0.3s; }
+        .testimonial-card:nth-child(5) { animation-delay: 1s; }
+        .testimonial-card:nth-child(6) { animation-delay: 1.7s; }
+        .testimonial-card:nth-child(7) { animation-delay: 0.5s; }
+        .testimonial-card:nth-child(8) { animation-delay: 1.2s; }
+        .testimonial-card:nth-child(9) { animation-delay: 1.9s; }
+
+        @keyframes card-float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
         }
 
         .testimonial-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(212, 168, 67, 0.15);
         }
 
         .testimonial-img {
@@ -837,8 +1072,8 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-badge" data-pt="Caminhonetes Selecionadas" data-es="Camionetas Seleccionadas">Caminhonetes Selecionadas</div>
-            <h1 data-pt="Sua próxima <em>Truck</em> está aqui." data-es="Tu próxima <em>Truck</em> está aquí.">Sua próxima <em>Truck</em> está aqui.</h1>
-            <p data-pt="As melhores caminhonetes dos EUA. Qualidade garantida, preço justo e entregamos na porta da sua casa." data-es="Las mejores camionetas de EE.UU. Calidad garantizada, precio justo y entregamos en la puerta de tu casa.">As melhores caminhonetes dos EUA. Qualidade garantida, preço justo e entregamos na porta da sua casa.</p>
+            <h1 data-pt="Encontramos o <em>carro dos seus sonhos</em>" data-es="Encontramos el <em>carro de tus sueños</em>">Encontramos o <em>carro dos seus sonhos</em></h1>
+            <p data-pt="Diga a marca, modelo e ano. Nós encontramos e entregamos na porta da sua casa." data-es="Dinos la marca, modelo y año. Nosotros lo encontramos y te lo entregamos en la puerta de tu casa.">Diga a marca, modelo e ano. Nós encontramos e entregamos na porta da sua casa.</p>
             <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!" class="cta-button" data-pt="Quero Garantir Minha Nave" data-es="Quiero Asegurar Mi Nave">
                 <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                 Quero Garantir Minha Nave
