@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Motors</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1956236488221174');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1956236488221174&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --blue-dark: #0a0a0a;
+            --blue-mid: #1a1a1a;
+            --blue-accent: #d4a843;
+            --white: #ffffff;
+            --gray-light: #f5f5f0;
+            --gray-text: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--white);
+            color: var(--blue-dark);
+            overflow-x: hidden;
+        }
+
+        /* ========== HEADER ========== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(10, 22, 40, 0.05);
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--blue-dark);
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--blue-accent);
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 0;
+            border: 1px solid var(--blue-dark);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .lang-btn {
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: transparent;
+            color: var(--blue-dark);
+        }
+
+        .lang-btn.active {
+            background: var(--blue-dark);
+            color: var(--white);
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: var(--gray-light);
+        }
+
+        /* ========== HERO ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 120px 20px 80px;
+            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('ram-hero.png') center/cover no-repeat;
+            opacity: 0.35;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(212, 168, 67, 0.2);
+            border: 1px solid rgba(212, 168, 67, 0.3);
+            border-radius: 50px;
+            color: var(--blue-accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--blue-accent);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray-text);
+            margin-bottom: 40px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 40px;
+            background: #25d366;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 30px rgba(37, 211, 102, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(37, 211, 102, 0.4);
+        }
+
+        .cta-button svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* ========== STATS ========== */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding: 60px 20px;
+            background: var(--white);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--blue-dark);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--gray-text);
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        /* ========== BENEFITS ========== */
+        .benefits {
+            padding: 80px 20px;
+            background: var(--gray-light);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--blue-dark);
+            margin-bottom: 50px;
+            letter-spacing: -0.5px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--blue-dark);
+            margin-bottom: 12px;
+        }
+
+        .benefit-card p {
+            font-size: 0.95rem;
+            color: var(--gray-text);
+            line-height: 1.6;
+        }
+
+        /* ========== TESTIMONIALS ========== */
+        .testimonials {
+            padding: 80px 20px;
+            background: var(--blue-dark);
+        }
+
+        .testimonials .section-title {
+            color: var(--white);
+        }
+
+        .testimonials-subtitle {
+            text-align: center;
+            color: var(--blue-accent);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: -35px;
+            margin-bottom: 50px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--blue-mid);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 168, 67, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .testimonial-img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+        }
+
+        .testimonial-body {
+            padding: 20px;
+        }
+
+        .testimonial-stars {
+            color: #f59e0b;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-text {
+            font-size: 0.95rem;
+            color: #ccc;
+            line-height: 1.6;
+            font-style: italic;
+            margin-bottom: 14px;
+        }
+
+        .testimonial-name {
+            font-size: 0.85rem;
+            color: var(--blue-accent);
+            font-weight: 700;
+        }
+
+        /* ========== VIDEO SECTION ========== */
+        .video-section {
+            padding: 80px 20px;
+            background: var(--gray-light);
+            text-align: center;
+        }
+
+        .video-badge {
+            display: inline-block;
+            padding: 8px 24px;
+            background: var(--blue-dark);
+            color: var(--blue-accent);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .video-section h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 800;
+            color: var(--blue-dark);
+            margin-bottom: 40px;
+        }
+
+        .video-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            display: block;
+        }
+
+        /* ========== INVENTORY ========== */
+        .inventory {
+            padding: 80px 20px;
+            background: var(--blue-dark);
+        }
+
+        .inventory .section-title {
+            color: var(--white);
+        }
+
+        .inventory-layout {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* FILTER SIDEBAR */
+        .filter-sidebar {
+            width: 260px;
+            flex-shrink: 0;
+        }
+
+        .filter-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--blue-accent);
+        }
+
+        .filter-header svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .filter-group {
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .filter-group-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            background: var(--blue-mid);
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--white);
+            transition: background 0.2s;
+        }
+
+        .filter-group-btn:hover {
+            background: #252525;
+        }
+
+        .filter-group-btn .filter-icon {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .filter-group-btn .filter-icon svg {
+            width: 18px;
+            height: 18px;
+            opacity: 0.6;
+        }
+
+        .filter-group-btn .chevron {
+            font-size: 1.2rem;
+            color: var(--blue-accent);
+            transition: transform 0.3s;
+        }
+
+        .filter-group.open .chevron {
+            transform: rotate(90deg);
+        }
+
+        .filter-options {
+            display: none;
+            padding: 10px 16px 14px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            background: var(--blue-mid);
+        }
+
+        .filter-group.open .filter-options {
+            display: block;
+        }
+
+        .filter-options label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 0;
+            font-size: 0.85rem;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .filter-options input[type="checkbox"] {
+            accent-color: var(--blue-accent);
+            width: 16px;
+            height: 16px;
+        }
+
+        .filter-options select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #ccc;
+            background: #222;
+        }
+
+        /* INVENTORY GRID */
+        .inventory-main {
+            flex: 1;
+        }
+
+        .inventory-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .inventory-top h2 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+        }
+
+        .sort-select {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .sort-select select {
+            padding: 8px 12px;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            background: var(--blue-mid);
+            color: #ccc;
+        }
+
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .truck-card {
+            background: var(--blue-mid);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 168, 67, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .truck-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(212, 168, 67, 0.15);
+        }
+
+        .truck-card-img {
+            position: relative;
+            aspect-ratio: 16/10;
+            overflow: hidden;
+        }
+
+        .truck-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .truck-card-img .img-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 32px;
+            background: rgba(255,255,255,0.8);
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            transition: background 0.2s;
+        }
+
+        .truck-card-img .img-nav:hover {
+            background: rgba(255,255,255,1);
+        }
+
+        .truck-card-img .img-nav.prev { left: 8px; }
+        .truck-card-img .img-nav.next { right: 8px; }
+
+        .truck-card-body {
+            padding: 20px;
+        }
+
+        .truck-card-body h3 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--blue-accent);
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .truck-price {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .truck-price span.label {
+            font-size: 0.85rem;
+            color: #999;
+            font-weight: 600;
+        }
+
+        .truck-price span.value {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--blue-accent);
+        }
+
+        .truck-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            padding: 12px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 16px;
+        }
+
+        .truck-specs span {
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        .truck-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .truck-actions a {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1da851;
+        }
+
+        .btn-apply {
+            background: var(--blue-dark);
+            color: white;
+        }
+
+        .btn-apply:hover {
+            opacity: 0.9;
+        }
+
+        .btn-contact {
+            background: var(--blue-accent);
+            color: var(--blue-dark);
+            font-weight: 800;
+        }
+
+        .btn-contact:hover {
+            opacity: 0.9;
+        }
+
+        /* Mobile filter toggle */
+        .filter-toggle-mobile {
+            display: none;
+            width: 100%;
+            padding: 14px;
+            background: var(--blue-dark);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .inventory-layout {
+                flex-direction: column;
+            }
+
+            .filter-sidebar {
+                width: 100%;
+                display: none;
+            }
+
+            .filter-sidebar.show {
+                display: block;
+            }
+
+            .filter-toggle-mobile {
+                display: block;
+            }
+
+            .inventory-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* ========== CTA FINAL ========== */
+        .cta-section {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            color: var(--gray-text);
+            margin-bottom: 40px;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            background: var(--blue-dark);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        footer p {
+            color: var(--gray-text);
+            font-size: 0.85rem;
+        }
+
+        /* ========== WHATSAPP FLOAT ========== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        /* ========== MOBILE ========== */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            .cta-button {
+                padding: 16px 32px;
+                font-size: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Elite <span>Motors</span></div>
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('pt')">PT</button>
+            <button class="lang-btn" onclick="switchLang('es')">ES</button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge" data-pt="Caminhonetes Selecionadas" data-es="Camionetas Seleccionadas">Caminhonetes Selecionadas</div>
+            <h1 data-pt="Sua próxima <em>Truck</em> está aqui." data-es="Tu próxima <em>Truck</em> está aquí.">Sua próxima <em>Truck</em> está aqui.</h1>
+            <p data-pt="As melhores caminhonetes dos EUA. Qualidade garantida, preço justo e entregamos na porta da sua casa." data-es="Las mejores camionetas de EE.UU. Calidad garantizada, precio justo y entregamos en la puerta de tu casa.">As melhores caminhonetes dos EUA. Qualidade garantida, preço justo e entregamos na porta da sua casa.</p>
+            <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!" class="cta-button" data-pt="Quero Garantir Minha Nave" data-es="Quiero Asegurar Mi Nave">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Quero Garantir Minha Nave
+            </a>
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label" data-pt="Trucks Vendidas" data-es="Trucks Vendidas">Trucks Vendidas</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">100%</div>
+            <div class="stat-label" data-pt="Inspecionadas" data-es="Inspeccionadas">Inspecionadas</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">⭐ 4.9</div>
+            <div class="stat-label" data-pt="Avaliação dos Clientes" data-es="Evaluación de Clientes">Avaliação dos Clientes</div>
+        </div>
+    </section>
+
+    <!-- INVENTORY -->
+    <section class="inventory" id="inventory">
+        <h2 class="section-title" data-pt="Nosso Estoque" data-es="Nuestro Inventario">Nosso Estoque</h2>
+
+        <div style="max-width:1200px;margin:0 auto;">
+            <button class="filter-toggle-mobile" onclick="document.querySelector('.filter-sidebar').classList.toggle('show')" data-pt="Filtrar" data-es="Filtrar">Filtrar</button>
+        </div>
+
+        <div class="inventory-layout">
+            <!-- FILTER SIDEBAR -->
+            <aside class="filter-sidebar">
+                <div class="filter-header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="14" y2="12"/><line x1="4" y1="18" x2="10" y2="18"/></svg>
+                    Filter
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-group-btn" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="filter-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            Year
+                        </span>
+                        <span class="chevron">&#8250;</span>
+                    </button>
+                    <div class="filter-options">
+                        <label><input type="checkbox" value="2024"> 2024</label>
+                        <label><input type="checkbox" value="2023"> 2023</label>
+                        <label><input type="checkbox" value="2022"> 2022</label>
+                        <label><input type="checkbox" value="2021"> 2021</label>
+                        <label><input type="checkbox" value="2020"> 2020</label>
+                        <label><input type="checkbox" value="2019"> 2019</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-group-btn" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="filter-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+                            Make
+                        </span>
+                        <span class="chevron">&#8250;</span>
+                    </button>
+                    <div class="filter-options">
+                        <label><input type="checkbox" value="ford"> Ford</label>
+                        <label><input type="checkbox" value="chevrolet"> Chevrolet</label>
+                        <label><input type="checkbox" value="ram"> RAM</label>
+                        <label><input type="checkbox" value="gmc"> GMC</label>
+                        <label><input type="checkbox" value="toyota"> Toyota</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-group-btn" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="filter-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14M5 12h14M5 7h14"/></svg>
+                            Model
+                        </span>
+                        <span class="chevron">&#8250;</span>
+                    </button>
+                    <div class="filter-options">
+                        <label><input type="checkbox" value="f150"> F-150</label>
+                        <label><input type="checkbox" value="silverado"> Silverado</label>
+                        <label><input type="checkbox" value="ram1500"> RAM 1500</label>
+                        <label><input type="checkbox" value="sierra"> Sierra</label>
+                        <label><input type="checkbox" value="tundra"> Tundra</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-group-btn" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="filter-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
+                            Body Type
+                        </span>
+                        <span class="chevron">&#8250;</span>
+                    </button>
+                    <div class="filter-options">
+                        <label><input type="checkbox" value="crew"> Crew Cab</label>
+                        <label><input type="checkbox" value="double"> Double Cab</label>
+                        <label><input type="checkbox" value="regular"> Regular Cab</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-group-btn" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="filter-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                            Price
+                        </span>
+                        <span class="chevron">&#8250;</span>
+                    </button>
+                    <div class="filter-options">
+                        <select>
+                            <option value="">Min Price</option>
+                            <option value="20000">$20,000</option>
+                            <option value="25000">$25,000</option>
+                            <option value="30000">$30,000</option>
+                            <option value="35000">$35,000</option>
+                        </select>
+                        <br>
+                        <select>
+                            <option value="">Max Price</option>
+                            <option value="35000">$35,000</option>
+                            <option value="40000">$40,000</option>
+                            <option value="45000">$45,000</option>
+                            <option value="50000">$50,000+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-group-btn" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="filter-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                            Drivetrain
+                        </span>
+                        <span class="chevron">&#8250;</span>
+                    </button>
+                    <div class="filter-options">
+                        <label><input type="checkbox" value="4wd"> 4WD</label>
+                        <label><input type="checkbox" value="awd"> AWD</label>
+                        <label><input type="checkbox" value="rwd"> RWD</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-group-btn" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="filter-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="10" y1="10" x2="10" y2="14"/><line x1="14" y1="10" x2="14" y2="14"/></svg>
+                            Transmission
+                        </span>
+                        <span class="chevron">&#8250;</span>
+                    </button>
+                    <div class="filter-options">
+                        <label><input type="checkbox" value="automatic"> Automatic</label>
+                        <label><input type="checkbox" value="manual"> Manual</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-group-btn" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="filter-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                            Mileage
+                        </span>
+                        <span class="chevron">&#8250;</span>
+                    </button>
+                    <div class="filter-options">
+                        <select>
+                            <option value="">Max Mileage</option>
+                            <option value="50000">50,000 Mi</option>
+                            <option value="75000">75,000 Mi</option>
+                            <option value="100000">100,000 Mi</option>
+                            <option value="150000">150,000 Mi</option>
+                        </select>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- TRUCK CARDS -->
+            <div class="inventory-main">
+                <div class="inventory-top">
+                    <h2 data-pt="Trucks Disponíveis" data-es="Trucks Disponibles">Trucks Disponíveis</h2>
+                    <div class="sort-select">
+                        <span>Sort by:</span>
+                        <select>
+                            <option>Default</option>
+                            <option data-pt="Menor Preço" data-es="Menor Precio">Menor Preço</option>
+                            <option data-pt="Maior Preço" data-es="Mayor Precio">Maior Preço</option>
+                            <option data-pt="Mais Recente" data-es="Más Reciente">Mais Recente</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inventory-grid">
+                    <!-- TRUCK 1 -->
+                    <div class="truck-card">
+                        <div class="truck-card-img">
+                            <img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=600&q=80" alt="GMC Sierra 1500" loading="lazy">
+                            <button class="img-nav prev">&#8249;</button>
+                            <button class="img-nav next">&#8250;</button>
+                        </div>
+                        <div class="truck-card-body">
+                            <h3>2021 GMC Sierra 1500 Crew Cab</h3>
+                            <div class="truck-price">
+                                <span class="label">PRICE: </span>
+                                <span class="value">$42,999</span>
+                            </div>
+                            <div class="truck-specs">
+                                <span>68,722 Mi</span>
+                                <span>AUTOMATIC</span>
+                                <span>249138</span>
+                                <span>3GTU9DED6MG249138</span>
+                            </div>
+                            <div class="truck-actions">
+                                <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!%20GMC%20Sierra%201500%202021" class="btn-whatsapp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align:middle;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TRUCK 2 -->
+                    <div class="truck-card">
+                        <div class="truck-card-img">
+                            <img src="https://images.unsplash.com/photo-1605893477799-b99e3b8b93fe?w=600&q=80" alt="RAM 1500" loading="lazy">
+                            <button class="img-nav prev">&#8249;</button>
+                            <button class="img-nav next">&#8250;</button>
+                        </div>
+                        <div class="truck-card-body">
+                            <h3>2022 RAM 1500 Crew Cab</h3>
+                            <div class="truck-price">
+                                <span class="label">PRICE: </span>
+                                <span class="value">$39,999</span>
+                            </div>
+                            <div class="truck-specs">
+                                <span>112,685 Mi</span>
+                                <span>AUTOMATIC</span>
+                                <span>177604</span>
+                                <span>1C6SRFHT2NN177604</span>
+                            </div>
+                            <div class="truck-actions">
+                                <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!%20RAM%201500%202022" class="btn-whatsapp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align:middle;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TRUCK 3 -->
+                    <div class="truck-card">
+                        <div class="truck-card-img">
+                            <img src="https://images.unsplash.com/photo-1583267746897-2cf415887172?w=600&q=80" alt="RAM 1500" loading="lazy">
+                            <button class="img-nav prev">&#8249;</button>
+                            <button class="img-nav next">&#8250;</button>
+                        </div>
+                        <div class="truck-card-body">
+                            <h3>2019 RAM 1500 Crew Cab</h3>
+                            <div class="truck-price">
+                                <span class="label">PRICE: </span>
+                                <span class="value">$35,999</span>
+                            </div>
+                            <div class="truck-specs">
+                                <span>95,063 Mi</span>
+                                <span>AUTOMATIC</span>
+                                <span>639207</span>
+                                <span>1C6SRFST7KN639207</span>
+                            </div>
+                            <div class="truck-actions">
+                                <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!%20RAM%201500%202019" class="btn-whatsapp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align:middle;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TRUCK 4 -->
+                    <div class="truck-card">
+                        <div class="truck-card-img">
+                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=80" alt="Ford F-150" loading="lazy">
+                            <button class="img-nav prev">&#8249;</button>
+                            <button class="img-nav next">&#8250;</button>
+                        </div>
+                        <div class="truck-card-body">
+                            <h3>2023 Ford F-150 XLT Crew Cab</h3>
+                            <div class="truck-price">
+                                <span class="label">PRICE: </span>
+                                <span class="value">$44,999</span>
+                            </div>
+                            <div class="truck-specs">
+                                <span>42,150 Mi</span>
+                                <span>AUTOMATIC</span>
+                                <span>851234</span>
+                                <span>1FTFW1E82NFA51234</span>
+                            </div>
+                            <div class="truck-actions">
+                                <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!%20Ford%20F-150%202023" class="btn-whatsapp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align:middle;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TRUCK 5 -->
+                    <div class="truck-card">
+                        <div class="truck-card-img">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Chevrolet Silverado" loading="lazy">
+                            <button class="img-nav prev">&#8249;</button>
+                            <button class="img-nav next">&#8250;</button>
+                        </div>
+                        <div class="truck-card-body">
+                            <h3>2022 Chevrolet Silverado 1500 LT</h3>
+                            <div class="truck-price">
+                                <span class="label">PRICE: </span>
+                                <span class="value">$38,499</span>
+                            </div>
+                            <div class="truck-specs">
+                                <span>78,900 Mi</span>
+                                <span>AUTOMATIC</span>
+                                <span>432187</span>
+                                <span>3GCUYDED4NG432187</span>
+                            </div>
+                            <div class="truck-actions">
+                                <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!%20Silverado%201500%202022" class="btn-whatsapp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align:middle;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TRUCK 6 -->
+                    <div class="truck-card">
+                        <div class="truck-card-img">
+                            <img src="https://images.unsplash.com/photo-1590656364826-5f13b8e32cdc?w=600&q=80" alt="Toyota Tundra" loading="lazy">
+                            <button class="img-nav prev">&#8249;</button>
+                            <button class="img-nav next">&#8250;</button>
+                        </div>
+                        <div class="truck-card-body">
+                            <h3>2021 Toyota Tundra SR5 Crew Max</h3>
+                            <div class="truck-price">
+                                <span class="label">PRICE: </span>
+                                <span class="value">$41,500</span>
+                            </div>
+                            <div class="truck-specs">
+                                <span>55,200 Mi</span>
+                                <span>AUTOMATIC</span>
+                                <span>789456</span>
+                                <span>5TFDY5F19MX789456</span>
+                            </div>
+                            <div class="truck-actions">
+                                <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!%20Toyota%20Tundra%202021" class="btn-whatsapp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align:middle;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <h2 class="section-title" data-pt="O que nossos clientes dizem" data-es="Lo que dicen nuestros clientes">O que nossos clientes dizem</h2>
+        <p class="testimonials-subtitle" data-pt="+ de 4 anos no mercado" data-es="+ de 4 años en el mercado">+ de 4 anos no mercado</p>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="cliente1.jpg" alt="Cliente satisfeito" class="testimonial-img">
+                <div class="testimonial-body">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text" data-pt="&quot;Comprei no conforto da minha casa! O Eder cuidou de tudo, desde a escolha até a entrega. Super recomendo!&quot;" data-es="&quot;¡Compré desde la comodidad de mi casa! Eder se encargó de todo, desde la elección hasta la entrega. ¡Super recomendado!&quot;">"Comprei no conforto da minha casa! O Eder cuidou de tudo, desde a escolha até a entrega. Super recomendo!"</p>
+                    <span class="testimonial-name">- Carlos M.</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="cliente2.jpg" alt="Cliente satisfeito" class="testimonial-img">
+                <div class="testimonial-body">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text" data-pt="&quot;Pode confiar! O Eder entregou a truck na porta da minha casa, exatamente como combinado. Profissional demais!&quot;" data-es="&quot;¡Pueden confiar! Eder entregó la truck en la puerta de mi casa, exactamente como lo acordado. ¡Muy profesional!&quot;">"Pode confiar! O Eder entregou a truck na porta da minha casa, exatamente como combinado. Profissional demais!"</p>
+                    <span class="testimonial-name">- Rafael S.</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="cliente3.jpg" alt="Cliente satisfeito" class="testimonial-img">
+                <div class="testimonial-body">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text" data-pt="&quot;O Eder é muito honesto, me entregou o carro conforme combinado. Sem surpresas, só satisfação!&quot;" data-es="&quot;Eder es muy honesto, me entregó el carro como lo acordado. ¡Sin sorpresas, solo satisfacción!&quot;">"O Eder é muito honesto, me entregou o carro conforme combinado. Sem surpresas, só satisfação!"</p>
+                    <span class="testimonial-name">- Diego L.</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="cliente4.jpg" alt="Cliente satisfeito" class="testimonial-img">
+                <div class="testimonial-body">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text" data-pt="&quot;Melhor experiência de compra! O Eder me ajudou a encontrar a truck perfeita e entregou rapidinho. Nota 10!&quot;" data-es="&quot;¡Mejor experiencia de compra! Eder me ayudó a encontrar la truck perfecta y la entregó rapidísimo. ¡Nota 10!&quot;">"Melhor experiência de compra! O Eder me ajudou a encontrar a truck perfeita e entregou rapidinho. Nota 10!"</p>
+                    <span class="testimonial-name">- Thiago R.</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="cliente5.jpg" alt="Cliente satisfeito" class="testimonial-img">
+                <div class="testimonial-body">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text" data-pt="&quot;Minha RAM ficou incrível! O Eder é gente boa, transparente e cumpre o que promete. Já indiquei pra vários amigos.&quot;" data-es="&quot;¡Mi RAM quedó increíble! Eder es buena gente, transparente y cumple lo que promete. Ya lo recomendé a varios amigos.&quot;">"Minha RAM ficou incrível! O Eder é gente boa, transparente e cumpre o que promete. Já indiquei pra vários amigos."</p>
+                    <span class="testimonial-name">- Anderson P.</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="cliente6.jpg" alt="Cliente satisfeito" class="testimonial-img">
+                <div class="testimonial-body">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text" data-pt="&quot;Comprei minha RAM Rebel com o Eder e foi tudo perfeito. Atendimento em português faz toda a diferença!&quot;" data-es="&quot;Compré mi RAM Rebel con Eder y todo fue perfecto. ¡La atención en tu idioma hace toda la diferencia!&quot;">"Comprei minha RAM Rebel com o Eder e foi tudo perfeito. Atendimento em português faz toda a diferença!"</p>
+                    <span class="testimonial-name">- Lucas F.</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="cliente7.jpg" alt="Cliente satisfeito" class="testimonial-img">
+                <div class="testimonial-body">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text" data-pt="&quot;O Eder mandou entregar minha F-250 aqui em Nova York, na porta da minha casa! Não precisei sair de casa pra nada. Profissional demais!&quot;" data-es="&quot;¡Eder mandó entregar mi F-250 aquí en Nueva York, en la puerta de mi casa! No tuve que salir de casa para nada. ¡Muy profesional!&quot;">"O Eder mandou entregar minha F-250 aqui em Nova York, na porta da minha casa! Não precisei sair de casa pra nada. Profissional demais!"</p>
+                    <span class="testimonial-name">- Marcos A.</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="cliente8.jpg" alt="Cliente satisfeito" class="testimonial-img">
+                <div class="testimonial-body">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text" data-pt="&quot;SOLD! Mais uma entrega pro Colorado! O Eder resolve tudo, não importa a distância. Confiança total!&quot;" data-es="&quot;¡SOLD! ¡Otra entrega a Colorado! Eder resuelve todo, sin importar la distancia. ¡Confianza total!&quot;">"SOLD! Mais uma entrega pro Colorado! O Eder resolve tudo, não importa a distância. Confiança total!"</p>
+                    <span class="testimonial-name">- Bruno G.</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="cliente9.jpg" alt="Cliente satisfeito" class="testimonial-img">
+                <div class="testimonial-body">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text" data-pt="&quot;Comprei meu Mitsubishi com o Eder e foi a melhor decisão. Honesto, rápido e entregou impecável!&quot;" data-es="&quot;Compré mi Mitsubishi con Eder y fue la mejor decisión. ¡Honesto, rápido y entregó impecable!&quot;">"Comprei meu Mitsubishi com o Eder e foi a melhor decisão. Honesto, rápido e entregou impecável!"</p>
+                    <span class="testimonial-name">- José Guilherme</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section">
+        <h2 data-pt="Pronto para garantir sua Truck?" data-es="¿Listo para asegurar tu Truck?">Pronto para garantir sua Truck?</h2>
+        <p data-pt="Fale agora com um especialista pelo WhatsApp." data-es="Habla ahora con un especialista por WhatsApp.">Fale agora com um especialista pelo WhatsApp.</p>
+        <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!" class="cta-button" data-pt="Chamar no WhatsApp" data-es="Llamar por WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chamar no WhatsApp
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Elite Motors. All rights reserved.</p>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a onclick="fbq('track','Lead')" href="https://wa.me/16892446424?text=Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function switchLang(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update all elements with data attributes
+            document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+                const text = el.getAttribute('data-' + lang);
+                if (el.tagName === 'A') {
+                    // Keep the SVG icon for buttons
+                    const svg = el.querySelector('svg');
+                    if (svg) {
+                        el.innerHTML = '';
+                        el.appendChild(svg);
+                        el.append(' ' + text);
+                    } else {
+                        el.innerHTML = text;
+                    }
+                } else {
+                    el.innerHTML = text;
+                }
+            });
+
+            // Update WhatsApp links based on language
+            const whatsappMsg = lang === 'es'
+                ? 'Hola%2C%20quiero%20asegurar%20esta%20Truck!'
+                : 'Ol%C3%A1%2C%20quero%20garantir%20essa%20Truck!';
+
+            document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+                link.href = 'https://wa.me/16892446424?text=' + whatsappMsg;
+            });
+
+            // Update html lang attribute
+            document.documentElement.lang = lang;
+        }
+
+        // Smooth reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.benefit-card, .gallery-item, .stat').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
