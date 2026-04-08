@@ -540,16 +540,19 @@
 
             } catch (err) {
                 console.error('Error loading data:', err);
-                document.getElementById('tableBody').innerHTML = '<tr><td colspan="6" style="text-align:center;padding:40px;color:#ef4444;">Erro ao carregar dados</td></tr>';
+                document.getElementById('tableBody').innerHTML = '<tr><td colspan="7" style="text-align:center;padding:40px;color:#ef4444;">Erro ao carregar dados: ' + err.message + '</td></tr>';
             }
         }
 
         async function fetchCollection(name, startDate) {
-            let query = db.collection(name);
-            if (startDate) {
-                query = query.where('timestamp', '>=', startDate);
-            }
-            return query.get();
+            const snap = await db.collection(name).get();
+            if (!startDate) return snap;
+            // Filter client-side to avoid needing Firestore indexes
+            const filtered = snap.docs.filter(doc => {
+                const ts = doc.data().timestamp || '';
+                return ts >= startDate;
+            });
+            return { docs: filtered };
         }
 
         // Sort table
