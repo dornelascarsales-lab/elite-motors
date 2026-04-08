@@ -27,15 +27,15 @@ function formatMileage(mileage) {
   return num.toLocaleString('en-US') + ' Mi';
 }
 
-function getFirstPhoto(photos) {
-  if (!photos || !photos.trim()) return PLACEHOLDER_IMG;
-  const first = photos.split(',')[0].trim();
-  return first || PLACEHOLDER_IMG;
+function getPhotos(photos) {
+  if (!photos || !photos.trim()) return [];
+  return photos.split(',').map(p => p.trim()).filter(Boolean);
 }
 
-function buildCardHTML(vehicle) {
+function buildCardHTML(vehicle, cardIndex) {
   const title = `${vehicle.year} ${vehicle.make} ${vehicle.model} ${vehicle.trim || ''}`.trim();
-  const photo = getFirstPhoto(vehicle.photos);
+  const photos = getPhotos(vehicle.photos);
+  const hasPhotos = photos.length > 0;
   const price = formatPrice(vehicle.price);
   const mileage = formatMileage(vehicle.mileage);
   const transmission = vehicle.transmission || 'N/A';
@@ -43,10 +43,22 @@ function buildCardHTML(vehicle) {
   const vin = vehicle.vin || '';
   const whatsappMsg = encodeURIComponent(`Olá, quero garantir essa Truck! ${title}`);
 
+  let imgSection;
+  if (hasPhotos) {
+    const imgs = photos.map((p, i) => `<img src="${p}" alt="${title} - foto ${i+1}" loading="lazy">`).join('');
+    const navButtons = photos.length > 1 ? `
+                            <button class="img-nav prev" onclick="slideCard(this,-1)">&#8249;</button>
+                            <button class="img-nav next" onclick="slideCard(this,1)">&#8250;</button>
+                            <span class="photo-count">1/${photos.length}</span>` : '';
+    imgSection = `<div class="carousel" data-index="0">${imgs}</div>${navButtons}`;
+  } else {
+    imgSection = `<div class="coming-soon">Coming Soon</div>`;
+  }
+
   return `
                     <div class="truck-card" data-year="${vehicle.year}" data-make="${(vehicle.make || '').toLowerCase()}" data-body="${(vehicle.body_type || '').toLowerCase()}" data-drivetrain="${(vehicle.drivetrain || '').toLowerCase()}" data-transmission="${(vehicle.transmission || '').toLowerCase()}" data-price="${vehicle.price || 0}" data-mileage="${vehicle.mileage || 0}" data-vin="${vin}">
                         <div class="truck-card-img">
-                            <img src="${photo}" alt="${title}" loading="lazy" onerror="this.src='${PLACEHOLDER_IMG}'">
+                            ${imgSection}
                         </div>
                         <div class="truck-card-body">
                             <h3>${title.toUpperCase()}</h3>
@@ -255,7 +267,7 @@ async function main() {
   });
 
   // Build cards HTML
-  const cardsHTML = vehicles.map(v => buildCardHTML(v)).join('\n');
+  const cardsHTML = vehicles.map((v, i) => buildCardHTML(v, i)).join('\n');
 
   // Build sidebar HTML
   const sidebarHTML = buildSidebarHTML(vehicles);
