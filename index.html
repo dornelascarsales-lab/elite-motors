@@ -2497,7 +2497,9 @@
             referrer: document.referrer || 'direct'
         }).catch(() => {});
 
-        function trackWhatsAppClick(card) {
+        function trackWhatsAppClick(e, card) {
+            e.preventDefault();
+            const link = e.currentTarget.href;
             const data = {
                 visitorId: visitorId,
                 vin: card.dataset.vin || '',
@@ -2506,7 +2508,11 @@
                 timestamp: new Date().toISOString(),
                 userAgent: navigator.userAgent
             };
-            db.collection('whatsapp_clicks').add(data).catch(() => {});
+            db.collection('whatsapp_clicks').add(data).then(() => {
+                window.open(link, '_blank');
+            }).catch(() => {
+                window.open(link, '_blank');
+            });
         }
 
         function trackPhotoClick(card) {
@@ -2546,12 +2552,32 @@
 
                 // Track WhatsApp clicks
                 card.querySelectorAll('.btn-whatsapp').forEach(btn => {
-                    btn.addEventListener('click', () => trackWhatsAppClick(card));
+                    btn.addEventListener('click', (e) => trackWhatsAppClick(e, card));
                 });
 
                 // Track photo arrow clicks
                 card.querySelectorAll('.img-nav').forEach(btn => {
                     btn.addEventListener('click', () => trackPhotoClick(card));
+                });
+            });
+
+            // Track hero/CTA WhatsApp buttons
+            document.querySelectorAll('.cta-button, .whatsapp-float').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const link = btn.href;
+                    db.collection('whatsapp_clicks').add({
+                        visitorId: visitorId,
+                        vin: '',
+                        name: 'HERO / CTA BUTTON',
+                        price: '',
+                        timestamp: new Date().toISOString(),
+                        userAgent: navigator.userAgent
+                    }).then(() => {
+                        window.open(link, '_blank');
+                    }).catch(() => {
+                        window.open(link, '_blank');
+                    });
                 });
             });
         });
