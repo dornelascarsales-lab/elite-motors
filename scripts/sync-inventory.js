@@ -247,6 +247,13 @@ async function main() {
 
   console.log(`Found ${vehicles.length} vehicles`);
 
+  // Sort by price: highest to lowest
+  vehicles.sort((a, b) => {
+    const priceA = parseInt(a.price, 10) || 0;
+    const priceB = parseInt(b.price, 10) || 0;
+    return priceB - priceA;
+  });
+
   // Build cards HTML
   const cardsHTML = vehicles.map(v => buildCardHTML(v)).join('\n');
 
