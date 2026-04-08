@@ -157,7 +157,7 @@
         /* Stats Cards */
         .stats-row {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 16px;
             margin-bottom: 30px;
         }
@@ -352,6 +352,10 @@
         <!-- Stats -->
         <div class="stats-row">
             <div class="stat-card">
+                <div class="stat-label">Visitantes Únicos</div>
+                <div class="stat-value" id="totalVisitors">-</div>
+            </div>
+            <div class="stat-card">
                 <div class="stat-label">Cliques WhatsApp</div>
                 <div class="stat-value" id="totalWhatsapp">-</div>
             </div>
@@ -377,10 +381,11 @@
                     <thead>
                         <tr>
                             <th onclick="sortTable(0)"># Veículo</th>
-                            <th onclick="sortTable(1)">WhatsApp</th>
-                            <th onclick="sortTable(2)">Views</th>
-                            <th onclick="sortTable(3)">Fotos</th>
-                            <th onclick="sortTable(4)">Conversão</th>
+                            <th onclick="sortTable(1)">Únicos</th>
+                            <th onclick="sortTable(2)">WhatsApp</th>
+                            <th onclick="sortTable(3)">Views</th>
+                            <th onclick="sortTable(4)">Fotos</th>
+                            <th onclick="sortTable(5)">Conversão</th>
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -452,34 +457,41 @@
             }
 
             try {
-                const [whatsappSnap, viewsSnap, photosSnap] = await Promise.all([
+                const [whatsappSnap, viewsSnap, photosSnap, visitsSnap] = await Promise.all([
                     fetchCollection('whatsapp_clicks', startDate),
                     fetchCollection('card_views', startDate),
-                    fetchCollection('photo_clicks', startDate)
+                    fetchCollection('photo_clicks', startDate),
+                    fetchCollection('page_visits', startDate)
                 ]);
 
                 const whatsappData = whatsappSnap.docs.map(d => d.data());
                 const viewsData = viewsSnap.docs.map(d => d.data());
                 const photosData = photosSnap.docs.map(d => d.data());
+                const visitsData = visitsSnap.docs.map(d => d.data());
+
+                // Count unique visitors (global)
+                const uniqueVisitorIds = new Set(visitsData.map(d => d.visitorId).filter(Boolean));
 
                 // Aggregate by vehicle name
                 const vehicles = {};
 
-                whatsappData.forEach(d => {
-                    const name = d.name || 'Unknown';
-                    if (!vehicles[name]) vehicles[name] = { whatsapp: 0, views: 0, photos: 0, price: d.price || '' };
-                    vehicles[name].whatsapp++;
-                });
-
                 viewsData.forEach(d => {
                     const name = d.name || 'Unknown';
-                    if (!vehicles[name]) vehicles[name] = { whatsapp: 0, views: 0, photos: 0, price: d.price || '' };
+                    if (!vehicles[name]) vehicles[name] = { whatsapp: 0, views: 0, photos: 0, price: d.price || '', uniqueViewers: new Set(), uniqueWa: new Set() };
                     vehicles[name].views++;
+                    if (d.visitorId) vehicles[name].uniqueViewers.add(d.visitorId);
+                });
+
+                whatsappData.forEach(d => {
+                    const name = d.name || 'Unknown';
+                    if (!vehicles[name]) vehicles[name] = { whatsapp: 0, views: 0, photos: 0, price: d.price || '', uniqueViewers: new Set(), uniqueWa: new Set() };
+                    vehicles[name].whatsapp++;
+                    if (d.visitorId) vehicles[name].uniqueWa.add(d.visitorId);
                 });
 
                 photosData.forEach(d => {
                     const name = d.name || 'Unknown';
-                    if (!vehicles[name]) vehicles[name] = { whatsapp: 0, views: 0, photos: 0, price: '' };
+                    if (!vehicles[name]) vehicles[name] = { whatsapp: 0, views: 0, photos: 0, price: '', uniqueViewers: new Set(), uniqueWa: new Set() };
                     vehicles[name].photos++;
                 });
 
@@ -489,6 +501,7 @@
                 const totalP = photosData.length;
                 const totalC = totalV > 0 ? ((totalW / totalV) * 100).toFixed(1) + '%' : '0%';
 
+                document.getElementById('totalVisitors').textContent = uniqueVisitorIds.size;
                 document.getElementById('totalWhatsapp').textContent = totalW;
                 document.getElementById('totalViews').textContent = totalV;
                 document.getElementById('totalPhotos').textContent = totalP;
@@ -499,11 +512,12 @@
 
                 const tbody = document.getElementById('tableBody');
                 if (sorted.length === 0) {
-                    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:40px;color:#666;">Nenhum dado encontrado para este período</td></tr>';
+                    tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:40px;color:#666;">Nenhum dado encontrado para este período</td></tr>';
                     return;
                 }
 
                 tbody.innerHTML = sorted.map(([name, data]) => {
+                    const uniqueCount = data.uniqueViewers.size;
                     const conv = data.views > 0 ? ((data.whatsapp / data.views) * 100).toFixed(1) : 0;
                     const convNum = parseFloat(conv);
                     const barWidth = Math.min(convNum * 2, 100);
@@ -515,6 +529,7 @@
 
                     return `<tr>
                         <td>${name}</td>
+                        <td>${uniqueCount}</td>
                         <td><strong>${data.whatsapp}</strong></td>
                         <td>${data.views}</td>
                         <td>${data.photos}</td>
