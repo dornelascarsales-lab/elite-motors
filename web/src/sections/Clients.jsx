@@ -19,6 +19,7 @@ export default function Clients() {
   const headerRef = useReveal();
   const gridRef = useReveal({ threshold: 0.1 });
   const wallRef = useReveal({ threshold: 0.05 });
+  const videoRef = useReveal({ threshold: 0.2 });
   const [a, b, ...rest] = REVIEWS;
 
   return (
@@ -60,6 +61,21 @@ export default function Clients() {
             </article>
           ))}
         </div>
+      </div>
+
+      <div ref={videoRef} className="grid grid-cols-1 md:grid-cols-12 gap-8 mt-16 items-center reveal-up">
+        <div className="md:col-span-4 md:col-start-2">
+          <div className="relative aspect-[9/16] max-w-[320px] mx-auto overflow-hidden rounded-sm border border-accent/20 skeuo-card-active bg-black">
+            <video src="./depoimento-cliente1.mp4" poster="./depoimento-cliente1.jpg" controls playsInline preload="none" className="w-full h-full object-cover"></video>
+          </div>
+        </div>
+        <blockquote className="md:col-span-6">
+          <div className="text-[0.65rem] text-accent tracking-widest uppercase mb-4 flex items-center gap-3">
+            <iconify-icon icon="solar:play-circle-linear" class="text-base"></iconify-icon> {t('clients.videoTestimonial')}
+          </div>
+          <p className="text-2xl md:text-4xl text-white font-medium tracking-tight leading-snug">“{t('clients.quote')}”</p>
+          <footer className="mt-6 text-[0.65rem] tracking-widest uppercase text-white/40">{t('clients.quoteBy')}</footer>
+        </blockquote>
       </div>
 
       <div ref={wallRef} className="columns-1 sm:columns-2 lg:columns-4 gap-6 mt-16 reveal-up">

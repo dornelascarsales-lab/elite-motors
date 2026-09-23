@@ -138,6 +138,9 @@ const dict = {
     'clients.title': 'Quem já comprou',
     'clients.titleAccent': 'com o Eder',
     'clients.video': 'Conheça quem vai te atender',
+    'clients.videoTestimonial': 'Depoimento em vídeo',
+    'clients.quote': 'Atendimento 100%. Recebi a bichona aqui, máquina nova. Tudo online, sem preocupação de nada. Me entregou certinho.',
+    'clients.quoteBy': 'Cliente Elite Motors · compra 100% online com entrega',
     'clients.videoText': 'Eder Dornelas vende carros nos Estados Unidos há 5 anos e atende brasileiros e latinos do primeiro contato até a entrega.',
 
     'faq.kicker': 'Dúvidas',
@@ -298,6 +301,9 @@ const dict = {
     'clients.title': 'Quienes ya compraron',
     'clients.titleAccent': 'con Eder',
     'clients.video': 'Conoce a quien te va a atender',
+    'clients.videoTestimonial': 'Testimonio en video',
+    'clients.quote': 'Atención 100%. Recibí la troca aquí, una máquina nueva. Todo en línea, sin ninguna preocupación. Me la entregó tal como acordamos.',
+    'clients.quoteBy': 'Cliente de Elite Motors · compra 100% en línea con entrega',
     'clients.videoText': 'Eder Dornelas vende autos en Estados Unidos hace 5 años y atiende a brasileños y latinos desde el primer mensaje hasta la entrega.',
 
     'faq.kicker': 'Preguntas',
