@@ -4,13 +4,14 @@ import { useLang } from '../i18n';
 // Depoimentos do site antigo (fotos cliente1..9.jpg na raiz do repo)
 const REVIEWS = [
   { img: 'cliente1.jpg', name: 'Carlos M.', pt: 'Comprei no conforto da minha casa. O Eder cuidou de tudo, desde a escolha até a entrega.', es: 'Compré desde la comodidad de mi casa. Eder se encargó de todo, desde la elección hasta la entrega.' },
-  { img: 'cliente7.jpg', name: 'Marcos A.', pt: 'O Eder mandou entregar minha F-250 aqui em Nova York, na porta da minha casa. Não precisei sair de casa pra nada.', es: 'Eder mandó entregar mi F-250 aquí en Nueva York, en la puerta de mi casa. No tuve que salir para nada.' },
+  { img: 'cliente-paulo.jpg', name: 'Paulo · Nova York', pt: 'O Eder mandou entregar minha F-250 aqui em Nova York, na porta da minha casa. Não precisei sair de casa pra nada.', es: 'Eder mandó entregar mi F-250 aquí en Nueva York, en la puerta de mi casa. No tuve que salir para nada.' },
   { img: 'cliente2.jpg', name: 'Rafael S.', pt: 'Pode confiar. O Eder entregou a truck na porta da minha casa, exatamente como combinado.', es: 'Pueden confiar. Eder entregó la troca en la puerta de mi casa, exactamente como lo acordado.' },
   { img: 'cliente3.jpg', name: 'Diego L.', pt: 'O Eder é muito honesto, me entregou o carro conforme combinado. Sem surpresas.', es: 'Eder es muy honesto, me entregó el carro como lo acordado. Sin sorpresas.' },
   { img: 'cliente4.jpg', name: 'Thiago R.', pt: 'Me ajudou a encontrar a truck perfeita e entregou rapidinho. Nota 10.', es: 'Me ayudó a encontrar la troca perfecta y la entregó rapidísimo. Nota 10.' },
   { img: 'cliente5.jpg', name: 'Anderson P.', pt: 'Minha RAM ficou incrível. Transparente e cumpre o que promete. Já indiquei pra vários amigos.', es: 'Mi RAM quedó increíble. Transparente y cumple lo que promete. Ya lo recomendé a varios amigos.' },
   { img: 'cliente6.jpg', name: 'Lucas F.', pt: 'Comprei minha RAM Rebel com o Eder e foi tudo perfeito. Atendimento em português faz toda a diferença.', es: 'Compré mi RAM Rebel con Eder y todo fue perfecto. La atención en tu idioma hace toda la diferencia.' },
   { img: 'cliente8.jpg', name: 'Bruno G.', pt: 'Mais uma entrega pro Colorado. O Eder resolve tudo, não importa a distância.', es: 'Otra entrega a Colorado. Eder resuelve todo, sin importar la distancia.' },
+  { img: 'cliente-gmc.jpg', name: 'GMC Sierra', caption: true },
   { img: 'cliente9.jpg', name: 'José Guilherme', pt: 'Comprei meu Mitsubishi com o Eder e foi a melhor decisão. Honesto, rápido e entregou impecável.', es: 'Compré mi Mitsubishi con Eder y fue la mejor decisión. Honesto, rápido y entregó impecable.' },
 ];
 
@@ -53,8 +54,8 @@ export default function Clients() {
         <div className="md:col-span-4 flex flex-col gap-8">
           {[a, b].map(r => (
             <article key={r.img} className="group">
-              <div className="w-full aspect-video overflow-hidden rounded-sm border border-white/10 mb-4">
-                <img src={`./${r.img}`} alt={`${r.name}, cliente da Elite Motors`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" />
+              <div className="w-full aspect-[4/3] overflow-hidden rounded-sm border border-white/10 mb-4">
+                <img src={`./${r.img}`} alt={`${r.name}, cliente da Elite Motors`} loading="lazy" className="w-full h-full object-cover object-[center_30%] group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" />
               </div>
               <div className="text-[0.65rem] text-white/40 tracking-widest uppercase mb-2">{r.name}</div>
               <p className="text-base text-white/85 font-light leading-snug">“{r[lang]}”</p>
@@ -78,14 +79,22 @@ export default function Clients() {
         </blockquote>
       </div>
 
-      <div ref={wallRef} className="columns-1 sm:columns-2 lg:columns-4 gap-6 mt-16 reveal-up">
+      <div ref={wallRef} className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-16 reveal-up">
         {rest.map(r => (
-          <figure key={r.img} className="break-inside-avoid mb-6 rounded-sm border border-white/5 skeuo-card overflow-hidden group">
-            <img src={`./${r.img}`} alt={`${r.name}, cliente da Elite Motors`} loading="lazy" className="w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
-            <figcaption className="p-5">
-              <div className="text-accent text-xs mb-2">★★★★★</div>
-              <p className="text-sm text-white/70 font-light leading-relaxed mb-3">“{r[lang]}”</p>
-              <span className="text-[0.6rem] tracking-widest uppercase text-white/40">{r.name}</span>
+          <figure key={r.img} className="rounded-sm border border-white/5 skeuo-card overflow-hidden group flex flex-col">
+            <div className="aspect-[3/4] overflow-hidden">
+              <img src={`./${r.img}`} alt={`${r.name}, cliente da Elite Motors`} loading="lazy" className="w-full h-full object-cover object-[center_40%] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" />
+            </div>
+            <figcaption className="p-5 flex flex-col flex-1">
+              {r.caption ? (
+                <p className="text-sm text-white/70 font-light leading-relaxed mb-3">{lang === 'es' ? 'Otra entrega hecha.' : 'Mais uma entrega feita.'}</p>
+              ) : (
+                <>
+                  <div className="text-accent text-xs mb-2">★★★★★</div>
+                  <p className="text-sm text-white/70 font-light leading-relaxed mb-3">“{r[lang]}”</p>
+                </>
+              )}
+              <span className="text-[0.6rem] tracking-widest uppercase text-white/40 mt-auto">{r.name}</span>
             </figcaption>
           </figure>
         ))}

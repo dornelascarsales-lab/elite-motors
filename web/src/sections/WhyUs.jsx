@@ -11,7 +11,7 @@ export default function WhyUs({ vehicles }) {
     { id: 1, icon: 'solar:chat-square-like-linear', span: 'md:col-span-2', image: './cliente5.jpg' },
     { id: 2, icon: 'solar:refresh-circle-linear', span: 'md:col-span-1' },
     { id: 3, icon: 'solar:box-linear', span: 'md:col-span-1' },
-    { id: 4, icon: 'solar:map-arrow-right-linear', span: 'md:col-span-2', image: van?.photos[0] || './cliente7.jpg' },
+    { id: 4, icon: 'solar:map-arrow-right-linear', span: 'md:col-span-2', image: van?.photos[0] || './cliente-paulo.jpg' },
   ];
 
   return (
