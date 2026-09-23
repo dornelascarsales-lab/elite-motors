@@ -2,8 +2,8 @@ name: Sync Inventory
 
 on:
   schedule:
-    - cron: '0 13 * * *'  # 9 AM EST (UTC-4)
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 13 * * *'  # 9 AM EDT
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -12,24 +12,23 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci || npm install
 
-      - name: Run inventory sync
+      # O runner já vem com Google Chrome instalado; o script usa channel 'chrome'.
+      - name: Scrape Summit inventory
         run: npm run sync
 
       - name: Commit and push changes
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add index.html
-          git diff --staged --quiet || git commit -m "sync: update inventory from Captae CSV $(date +'%Y-%m-%d %H:%M')"
+          git add inventory.json
+          git diff --staged --quiet || git commit -m "sync: estoque da Summit $(date +'%Y-%m-%d %H:%M')"
           git push

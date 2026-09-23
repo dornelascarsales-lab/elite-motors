@@ -1,11 +1,11 @@
 {
   "name": "elite-motors-inventory-sync",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "sync": "node scripts/sync-inventory.js"
   },
   "dependencies": {
-    "csv-parse": "^5.5.0"
+    "playwright-core": "^1.55.0"
   }
 }

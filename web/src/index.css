@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #030303;
+    color: #ffffff;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .bg-texture {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      rgba(255, 255, 255, 0.015) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+  }
+
+  .skeuo-card {
+    box-shadow: 
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.05),
+      inset 0 0 20px rgba(0, 0, 0, 0.8),
+      0 10px 40px -10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, rgba(30, 35, 45, 0.8) 0%, rgba(15, 18, 25, 0.9) 100%);
+  }
+  
+  .skeuo-card-active {
+    box-shadow: 
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.1),
+      inset 0 0 30px rgba(212, 168, 67, 0.05),
+      0 0 40px -10px rgba(212, 168, 67, 0.15);
+    background: linear-gradient(180deg, rgba(40, 45, 55, 0.9) 0%, rgba(20, 24, 32, 0.95) 100%);
+    border: 1px solid rgba(212, 168, 67, 0.25);
+  }
+
+  /* Clip Slide Blur Animation */
+  .clip-slide {
+    --slide-y: 40px;
+    --slide-s: 0.95;
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(var(--slide-y)) scale(var(--slide-s));
+    clip-path: inset(100% 0 0 0);
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), 
+                filter 1s cubic-bezier(0.25, 1, 0.5, 1),
+                transform 1s cubic-bezier(0.25, 1, 0.5, 1),
+                clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .is-visible.clip-slide,
+  .is-visible .clip-slide {
+    --slide-y: 0px;
+    --slide-s: 1;
+    opacity: 1;
+    filter: blur(0);
+    clip-path: inset(-50% -50% -50% -50%); /* Allow shadows to bleed */
+  }
+
+  /* Word Reveal Mask Animation */
+  .word-mask {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    line-height: 1.1;
+  }
+  
+  .word-inner {
+    display: inline-block;
+    transform: translateY(110%);
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    transform-origin: bottom left;
+  }
+  
+  .is-visible.word-inner,
+  .is-visible .word-inner {
+    transform: translateY(0);
+  }
+
+  /* Stagger Delays */
+  .delay-100 { transition-delay: 100ms !important; }
+  .delay-200 { transition-delay: 200ms !important; }
+  .delay-300 { transition-delay: 300ms !important; }
+  .delay-400 { transition-delay: 400ms !important; }
+  .delay-500 { transition-delay: 500ms !important; }
+  .delay-600 { transition-delay: 600ms !important; }
+  .delay-700 { transition-delay: 700ms !important; }
+  .delay-800 { transition-delay: 800ms !important; }
+
+  /* Holodex 3D Layout */
+  .holodex-container {
+    perspective: 1200px;
+    transform-style: preserve-3d;
+  }
+  
+  .holodex-item {
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+  }
+
+  @media (min-width: 768px) {
+    /* Base State: Center pops out, edges push back */
+    .holodex-container:not(:hover) .holodex-left .holodex-item { 
+      transform: translateZ(-80px) rotateY(12deg) translateX(30px) scale(0.9);
+      opacity: 0.5;
+    }
+    .holodex-container:not(:hover) .holodex-center .holodex-item { 
+      transform: translateZ(40px) scale(1.05);
+      z-index: 10;
+      box-shadow: 0 30px 60px -10px rgba(0,0,0,0.8);
+      opacity: 1;
+    }
+    .holodex-container:not(:hover) .holodex-right .holodex-item { 
+      transform: translateZ(-80px) rotateY(-12deg) translateX(-30px) scale(0.9);
+      opacity: 0.5;
+    }
+    
+    /* Container Hovered: push everything back slightly */
+    .holodex-container:hover .holodex-item {
+      transform: translateZ(-40px) scale(0.95);
+      opacity: 0.6;
+      z-index: 1;
+    }
+    
+    /* Specific Item Hovered: pop it out aggressively */
+    .holodex-container .holodex-item:hover {
+      transform: translateZ(60px) scale(1.05);
+      opacity: 1;
+      z-index: 20;
+      box-shadow: 0 40px 80px -10px rgba(0,0,0,0.9);
+      border-color: rgba(212, 168, 67, 0.45);
+    }
+  }
+
+  /* Legacy Reveal Fallback */
+  .reveal-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@layer utilities {
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+}
+
+html { scroll-behavior: smooth; }
+:focus-visible { outline: 1px solid #d4a843; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .clip-slide, .word-inner, .reveal-up { transition: none !important; }
+}
