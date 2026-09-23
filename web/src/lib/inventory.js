@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const WHATSAPP = '16892446424';
+export const WHATSAPP = '16892884448';
 
 // Categoria usada nos filtros, a partir do body_type da Summit
 export function category(car) {

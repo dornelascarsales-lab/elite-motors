@@ -35,7 +35,7 @@ export default function Footer() {
           onClick={() => trackWhatsApp(null)}
           className="flex items-center gap-2 hover:text-white transition-colors"
         >
-          <WhatsIcon className="text-lg" /> +1 (689) 244-6424
+          <WhatsIcon className="text-lg" /> +1 (689) 288-4448
         </a>
         <span className="text-center normal-case tracking-wide">{t('footer.note')}</span>
         <span>&copy; {new Date().getFullYear()} Elite Motors. {t('footer.rights')}</span>
