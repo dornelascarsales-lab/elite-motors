@@ -68,7 +68,7 @@ const dict = {
     'how.3.text': 'Retire em Orlando ou combine a entrega na sua cidade. Já entregamos em Nova York e no Colorado.',
 
     'why.kicker': 'Por que a Elite',
-    'why.title': 'Feito para quem precisa\ndo carro para trabalhar',
+    'why.title': 'Feito para quem precisa do carro\npara trabalhar e curtir com a família',
     'why.1.title': 'Atendimento em português',
     'why.1.text': 'Sem inglês de concessionária e sem letra miúda. Você entende cada número antes de fechar.',
     'why.2.title': 'Estoque de verdade',
@@ -140,7 +140,7 @@ const dict = {
     'clients.video': 'Conheça quem vai te atender',
     'clients.videoTestimonial': 'Depoimento em vídeo',
     'clients.quote': 'Atendimento 100%. Recebi a bichona aqui, máquina nova. Tudo online, sem preocupação de nada. Me entregou certinho.',
-    'clients.quoteBy': 'Cliente Elite Motors · compra 100% online com entrega',
+    'clients.quoteBy': 'Vanio · compra 100% online com entrega',
     'clients.videoText': 'Eder Dornelas vende carros nos Estados Unidos há 5 anos e atende brasileiros e latinos do primeiro contato até a entrega.',
 
     'faq.kicker': 'Dúvidas',
@@ -231,7 +231,7 @@ const dict = {
     'how.3.text': 'Recógelo en Orlando o coordina la entrega en tu ciudad. Ya entregamos en Nueva York y Colorado.',
 
     'why.kicker': 'Por qué Elite',
-    'why.title': 'Hecho para quien necesita\nel auto para trabajar',
+    'why.title': 'Hecho para quien necesita el auto\npara trabajar y disfrutar con la familia',
     'why.1.title': 'Atención en tu idioma',
     'why.1.text': 'Sin inglés de concesionario ni letra pequeña. Entiendes cada número antes de cerrar.',
     'why.2.title': 'Inventario real',
@@ -303,7 +303,7 @@ const dict = {
     'clients.video': 'Conoce a quien te va a atender',
     'clients.videoTestimonial': 'Testimonio en video',
     'clients.quote': 'Atención 100%. Recibí la troca aquí, una máquina nueva. Todo en línea, sin ninguna preocupación. Me la entregó tal como acordamos.',
-    'clients.quoteBy': 'Cliente de Elite Motors · compra 100% en línea con entrega',
+    'clients.quoteBy': 'Vanio · compra 100% en línea con entrega',
     'clients.videoText': 'Eder Dornelas vende autos en Estados Unidos hace 5 años y atiende a brasileños y latinos desde el primer mensaje hasta la entrega.',
 
     'faq.kicker': 'Preguntas',
