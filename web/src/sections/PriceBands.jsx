@@ -15,7 +15,7 @@ export default function PriceBands({ vehicles, onPick }) {
       <div className="absolute top-0 bottom-0 left-1/3 w-px bg-white/[0.03] -z-10"></div>
       <div className="absolute top-0 bottom-0 right-1/3 w-px bg-white/[0.03] -z-10"></div>
 
-      <SectionHeader number="05" kicker={t('band.kicker')} title={t('band.title')} />
+      <SectionHeader number="07" kicker={t('band.kicker')} title={t('band.title')} />
 
       <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto holodex-container">
         {bands.map((b, i) => {

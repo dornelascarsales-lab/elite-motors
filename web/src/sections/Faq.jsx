@@ -10,7 +10,7 @@ export default function Faq() {
     <div id="duvidas" className="w-full max-w-3xl px-6 py-24 flex flex-col relative z-10 mt-10 scroll-mt-20">
       <div className="mb-12 w-full text-center flex flex-col items-center">
         <div className="flex items-center space-x-4 mb-4 text-[0.65rem] tracking-widest uppercase text-accent font-medium">
-          <span>07</span>
+          <span>09</span>
           <div className="w-12 h-px bg-accent/50"></div>
           <span>{t('faq.kicker')}</span>
         </div>

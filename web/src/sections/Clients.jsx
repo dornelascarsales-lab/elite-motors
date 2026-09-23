@@ -26,7 +26,7 @@ export default function Clients() {
       <div ref={headerRef} className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 reveal-up gap-6">
         <div>
           <div className="flex items-center space-x-4 mb-4 text-[0.65rem] tracking-widest uppercase text-accent font-medium">
-            <span>06</span>
+            <span>08</span>
             <div className="w-12 h-px bg-accent/50"></div>
             <span>{t('clients.kicker')}</span>
           </div>

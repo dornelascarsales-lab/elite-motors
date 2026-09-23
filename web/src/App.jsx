@@ -11,6 +11,8 @@ import Inventory from './sections/Inventory';
 import PriceBands from './sections/PriceBands';
 import Clients from './sections/Clients';
 import Faq from './sections/Faq';
+import CustomOrder from './sections/CustomOrder';
+import Financing from './sections/Financing';
 import FinalCta from './sections/FinalCta';
 import { useLang } from './i18n';
 import { useInventory, waLink } from './lib/inventory';
@@ -44,8 +46,10 @@ export default function App() {
         <Navbar />
         <main className="w-full flex flex-col items-center">
           <Hero vehicles={inv.vehicles} />
-          <HowItWorks />
+          <CustomOrder />
           <Inventory inv={inv} filters={filters} setFilters={setFilters} onOpen={setOpen} />
+          <Financing />
+          <HowItWorks />
           <WhyUs vehicles={inv.vehicles} />
           <PriceBands vehicles={inv.vehicles} onPick={pickBand} />
           <Clients />

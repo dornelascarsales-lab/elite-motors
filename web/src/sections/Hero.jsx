@@ -1,12 +1,11 @@
 import { useReveal } from '../hooks/useReveal';
 import MaskedText from '../components/MaskedText';
-import WhatsIcon from '../components/WhatsIcon';
 import { useLang } from '../i18n';
-import { money, waLink } from '../lib/inventory';
-import { trackWhatsApp } from '../lib/track';
+import { money } from '../lib/inventory';
+import { RATES, rateText } from './Financing';
 
 export default function Hero({ vehicles }) {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const revealRef = useReveal();
   const prices = vehicles.map(v => v.priceValue).filter(Boolean);
   const minPrice = prices.length ? Math.min(...prices) : null;
@@ -24,27 +23,31 @@ export default function Hero({ vehicles }) {
 
         {/* Visual */}
         <div className="col-span-12 md:col-span-7 order-2 md:order-1 flex h-full relative items-center justify-center clip-slide delay-200">
-          <div className="relative w-[340px] h-[340px] sm:w-[500px] sm:h-[500px] flex items-center justify-center">
+          <div className="relative w-[370px] h-[370px] sm:w-[540px] sm:h-[540px] flex items-center justify-center">
             <div className="absolute inset-0 rounded-full bg-accent opacity-[0.06] blur-3xl animate-pulse"></div>
 
             <div
-              className="absolute w-[300px] h-[300px] sm:w-[420px] sm:h-[420px] rounded-full border border-white/[0.05] bg-gradient-to-br from-white/[0.02] to-transparent"
+              className="absolute w-[330px] h-[330px] sm:w-[470px] sm:h-[470px] rounded-full border border-white/[0.05] bg-gradient-to-br from-white/[0.02] to-transparent"
               style={{ boxShadow: 'inset 0 0 40px rgba(0,0,0,0.8), 0 20px 50px rgba(0,0,0,0.5)' }}
             ></div>
 
-            <div className="absolute w-[230px] h-[230px] sm:w-[320px] sm:h-[320px] rounded-full border border-white/10 skeuo-card overflow-hidden group">
+            <div className="absolute w-[270px] h-[270px] sm:w-[390px] sm:h-[390px] rounded-full border border-white/10 skeuo-card overflow-hidden group">
               <img
                 src="./ram-hero.png"
-                className="absolute inset-0 w-full h-full object-cover object-[45%_60%] scale-[1.35] grayscale-[35%] contrast-110 group-hover:scale-[1.45] transition-transform duration-1000"
+                className="absolute inset-0 w-full h-full object-cover object-[46%_55%] scale-[1.08] grayscale-[35%] contrast-110 group-hover:scale-[1.15] transition-transform duration-1000"
                 alt="RAM 1500 preta"
               />
-              <div className="absolute inset-0 rounded-full" style={{ boxShadow: 'inset 0 0 60px 20px rgba(3,3,3,0.85)' }}></div>
+              <div className="absolute inset-0 rounded-full" style={{ boxShadow: 'inset 0 0 50px 12px rgba(3,3,3,0.8)' }}></div>
             </div>
 
             <div className="absolute right-[4%] sm:right-[8%] top-1/2 -translate-y-1/2 flex -space-x-2 z-10 animate-bounce">
               <iconify-icon icon="solar:double-alt-arrow-right-linear" class="text-5xl sm:text-6xl text-accent opacity-80"></iconify-icon>
               <iconify-icon icon="solar:double-alt-arrow-right-linear" class="text-5xl sm:text-6xl text-white"></iconify-icon>
             </div>
+
+            <a href="#encomenda" className="absolute top-6 sm:top-10 right-0 sm:right-4 flex items-center gap-2 px-3 py-1.5 border border-accent/40 bg-[#141820]/80 backdrop-blur rounded-sm text-[0.6rem] tracking-widest uppercase text-accent hover:bg-accent hover:text-black transition-colors z-10">
+              <iconify-icon icon="solar:magnifer-linear"></iconify-icon> {t('order.heroTag')}
+            </a>
 
             <a href="#estoque" className="absolute bottom-4 sm:bottom-10 left-2 sm:left-10 flex items-center space-x-3 text-xs tracking-wider uppercase group">
               <div className="w-6 h-6 rounded-full border border-accent flex items-center justify-center group-hover:bg-accent/20 transition-colors">
@@ -77,13 +80,10 @@ export default function Hero({ vehicles }) {
               <iconify-icon icon="solar:arrow-right-linear" class="transform group-hover:translate-x-1 transition-transform"></iconify-icon>
             </a>
             <a
-              href={waLink(t('final.msg'))}
-              target="_blank"
-              rel="noopener"
-              onClick={() => trackWhatsApp(null)}
+              href="#encomenda"
               className="px-5 py-2.5 border border-white/20 rounded-sm text-white text-[0.65rem] tracking-widest uppercase hover:bg-white hover:text-black transition-all flex items-center gap-2"
             >
-              <WhatsIcon className="text-sm" /> {t('hero.secondary')}
+              <iconify-icon icon="solar:magnifer-linear" class="text-sm"></iconify-icon> {t('order.heroCta')}
             </a>
           </div>
 
@@ -93,12 +93,12 @@ export default function Hero({ vehicles }) {
                 <div className="text-[0.6rem] tracking-widest uppercase text-white/40 mb-1">{t('hero.from')}</div>
                 <div className="font-mono text-xl text-white">{money(minPrice)}<span className="text-accent">*</span></div>
               </div>
-              <div>
-                <div className="text-[0.6rem] tracking-widest uppercase text-white/40 mb-1">{t('hero.updated')}</div>
-                <div className="font-mono text-xl text-white flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span> 24h
+              <a href="#financiamento" className="group">
+                <div className="text-[0.6rem] tracking-widest uppercase text-white/40 mb-1">{t('hero.rate')}</div>
+                <div className="font-mono text-xl text-white flex items-center gap-2 group-hover:text-accent transition-colors">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span> {rateText(RATES.best, lang)}% APR<span className="text-accent">*</span>
                 </div>
-              </div>
+              </a>
             </div>
           )}
         </div>

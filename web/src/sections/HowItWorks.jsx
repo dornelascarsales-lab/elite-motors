@@ -21,7 +21,7 @@ export default function HowItWorks() {
       <div className="absolute top-0 bottom-0 left-1/3 w-px bg-white/[0.03] -z-10"></div>
       <div className="absolute top-0 bottom-0 right-1/3 w-px bg-white/[0.03] -z-10"></div>
 
-      <SectionHeader number="02" kicker={t('how.kicker')} title={t('how.title')} />
+      <SectionHeader number="05" kicker={t('how.kicker')} title={t('how.title')} />
 
       <div ref={gridRef} className="relative max-w-5xl mx-auto holodex-container">
         <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-px h-12 bg-white/20 clip-slide delay-200"></div>

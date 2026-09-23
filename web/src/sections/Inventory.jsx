@@ -58,7 +58,7 @@ export default function Inventory({ inv, filters, setFilters, onOpen }) {
 
   return (
     <section id="estoque" className="w-full max-w-7xl py-32 px-6 relative border-b border-white/[0.05] scroll-mt-16">
-      <SectionHeader number="04" kicker={t('inv.kicker')} title={t('inv.title')} />
+      <SectionHeader number="03" kicker={t('inv.kicker')} title={t('inv.title')} />
 
       {/* Resumo por categoria (estilo "Proof of reserves") */}
       <div ref={tableRef} className="max-w-4xl mx-auto border border-white/10 rounded-sm skeuo-card overflow-hidden mb-16">

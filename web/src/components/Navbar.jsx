@@ -18,7 +18,8 @@ export default function Navbar() {
 
   const links = [
     { name: t('nav.inventory'), href: '#estoque' },
-    { name: t('nav.how'), href: '#como-funciona' },
+    { name: t('nav.order'), href: '#encomenda' },
+    { name: t('fin.kicker'), href: '#financiamento' },
     { name: t('nav.clients'), href: '#clientes' },
     { name: t('nav.faq'), href: '#duvidas' },
   ];

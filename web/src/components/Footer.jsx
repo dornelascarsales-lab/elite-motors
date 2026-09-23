@@ -20,7 +20,8 @@ export default function Footer() {
 
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm font-medium tracking-wide text-white/60">
           <a href="#estoque" className="hover:text-white transition-colors">{t('nav.inventory')}</a>
-          <a href="#como-funciona" className="hover:text-white transition-colors">{t('nav.how')}</a>
+          <a href="#encomenda" className="hover:text-white transition-colors">{t('nav.order')}</a>
+          <a href="#financiamento" className="hover:text-white transition-colors">{t('fin.kicker')}</a>
           <a href="#clientes" className="hover:text-white transition-colors">{t('nav.clients')}</a>
           <a href="#duvidas" className="hover:text-white transition-colors">{t('nav.faq')}</a>
         </div>
