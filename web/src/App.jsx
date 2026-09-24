@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NexusEngine from './components/NexusEngine';
+import ScrollVideoBg from './components/ScrollVideoBg';
 import CarDialog from './components/CarDialog';
 import WhatsIcon from './components/WhatsIcon';
 import Hero from './sections/Hero';
@@ -33,7 +34,8 @@ export default function App() {
 
   return (
     <div className="relative antialiased selection:bg-accent selection:text-black min-h-screen">
-      <NexusEngine />
+      <NexusEngine ribbon={false} />
+      <ScrollVideoBg />
 
       <div className="fixed inset-0 w-full h-full z-0 pointer-events-none flex justify-center">
         <div className="w-full max-w-7xl h-full border-x border-white/[0.03] relative">

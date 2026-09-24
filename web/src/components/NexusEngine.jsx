@@ -1,11 +1,12 @@
 import { useEffect, useRef } from 'react';
 
-export default function NexusEngine() {
+export default function NexusEngine({ ribbon = true }) {
   const canvasRef = useRef(null);
   const gridRef = useRef(null);
 
   // WebGL Renderer Effect
   useEffect(() => {
+    if (!ribbon) return;
     const canvas = canvasRef.current;
     const gl = canvas.getContext('webgl2');
     
@@ -194,7 +195,7 @@ export default function NexusEngine() {
       gl.deleteBuffer(tBuffer);
       gl.deleteBuffer(instanceBuffer);
     };
-  }, []);
+  }, [ribbon]);
 
   // Parallax Effect
   useEffect(() => {
@@ -212,7 +213,7 @@ export default function NexusEngine() {
   return (
     <div className="fixed inset-0 z-0 pointer-events-none select-none overflow-hidden bg-[#030303] text-white" style={{ fontFamily: "'Space Mono', monospace" }}>
       {/* 3D WebGL Canvas */}
-      <canvas ref={canvasRef} className="absolute inset-0 z-0 w-full h-full pointer-events-none opacity-60 md:opacity-100"></canvas>
+      {ribbon && <canvas ref={canvasRef} className="absolute inset-0 z-0 w-full h-full pointer-events-none opacity-60 md:opacity-100"></canvas>}
 
       {/* Grid Pattern with Parallax */}
       <div 
