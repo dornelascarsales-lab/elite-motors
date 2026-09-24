@@ -100,14 +100,19 @@ async function main() {
   const page = await browser.newPage({ userAgent: UA, locale: 'en-US' });
 
   await page.goto(`${BASE}/inventory/?page_no=1`, { waitUntil: 'domcontentloaded', timeout: 90000 });
-  const totalPages = parseInt(await page.$eval('[data-total-pages]', el => el.dataset.totalPages).catch(() => '1'), 10);
-  console.log(`Summit: ${totalPages} páginas de estoque`);
+  await page.waitForSelector('[data-total-pages]', { timeout: 30000 }).catch(() => {});
+  const declared = parseInt(await page.$eval('[data-total-pages]', el => el.dataset.totalPages).catch(() => '0'), 10);
+  console.log(`Summit: ${declared || '?'} páginas de estoque`);
 
+  // Lê página por página até acabar (não confia só no número declarado)
   const listed = [];
-  for (let n = 1; n <= totalPages; n++) {
+  for (let n = 1; n <= 30; n++) {
     const items = await scrapeListingPage(page, n);
+    const fresh = items.filter(v => !listed.some(l => l.vin === v.vin));
     console.log(`  página ${n}: ${items.length} carros`);
-    listed.push(...items);
+    if (!fresh.length) break;
+    listed.push(...fresh);
+    if (declared && n >= declared) break;
   }
 
   const unique = [...new Map(listed.filter(v => v.vin && v.url).map(v => [v.vin, v])).values()];
@@ -125,6 +130,13 @@ async function main() {
   await browser.close();
 
   vehicles.sort((a, b) => (b.priceValue || 0) - (a.priceValue || 0));
+
+  // Trava: se vier bem menos carro que da última vez, provavelmente a leitura falhou — não publica.
+  let previous = 0;
+  try { previous = JSON.parse(fs.readFileSync(OUT_PATH, 'utf-8')).count || 0; } catch {}
+  if (previous >= 10 && vehicles.length < previous * 0.6 && !process.env.FORCE_SYNC) {
+    throw new Error(`Só ${vehicles.length} carros contra ${previous} da última vez. Não atualizei (use FORCE_SYNC=1 se for real).`);
+  }
 
   fs.writeFileSync(OUT_PATH, JSON.stringify({
     updatedAt: new Date().toISOString(),
