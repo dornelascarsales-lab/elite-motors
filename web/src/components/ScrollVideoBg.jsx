@@ -41,10 +41,10 @@ export default function ScrollVideoBg() {
         muted
         playsInline
         preload="auto"
-        className="absolute inset-0 w-full h-full object-cover opacity-[0.22] md:opacity-[0.28]"
+        className="absolute inset-0 w-full h-full object-cover opacity-[0.36] md:opacity-[0.45] contrast-125 saturate-[1.15]"
       ></video>
       {/* vinheta para o conteúdo continuar legível */}
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, rgba(3,3,3,0.15) 0%, rgba(3,3,3,0.75) 75%, #030303 100%)' }}></div>
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, rgba(3,3,3,0.05) 0%, rgba(3,3,3,0.6) 78%, #030303 100%)' }}></div>
     </div>
   );
 }
