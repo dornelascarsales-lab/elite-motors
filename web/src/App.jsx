@@ -33,7 +33,8 @@ export default function App() {
     if (!inv.vehicles.length) return;
     const alvo = new URLSearchParams(window.location.search).get('carro');
     if (!alvo) return;
-    const car = inv.vehicles.find(v => String(v.stock || '').toLowerCase() === alvo.toLowerCase());
+    const a = alvo.toLowerCase();
+    const car = inv.vehicles.find(v => String(v.stock || '').toLowerCase() === a || String(v.vin || '').toLowerCase() === a);
     if (car) {
       setOpen(car);
       document.getElementById('grade')?.scrollIntoView({ block: 'start' });
@@ -44,7 +45,7 @@ export default function App() {
   const abrirCarro = car => {
     setOpen(car);
     const url = new URL(window.location.href);
-    if (car?.stock) url.searchParams.set('carro', car.stock);
+    if (car?.stock || car?.vin) url.searchParams.set('carro', car.stock || car.vin);
     else url.searchParams.delete('carro');
     window.history.replaceState(null, '', url);
   };
