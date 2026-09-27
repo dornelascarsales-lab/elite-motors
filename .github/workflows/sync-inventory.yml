@@ -29,10 +29,14 @@ jobs:
       - name: Build WhatsApp catalog feed
         run: node scripts/catalog-feed.js
 
+      # Uma página por carro (prévia do link no WhatsApp com a foto certa)
+      - name: Build car link-preview pages
+        run: node scripts/car-pages.js
+
       - name: Commit and push changes
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add inventory.json catalogo-whatsapp.csv
+          git add -A inventory.json catalogo-whatsapp.csv carro
           git diff --staged --quiet || git commit -m "sync: estoque da Summit $(date +'%Y-%m-%d %H:%M')"
           git push
