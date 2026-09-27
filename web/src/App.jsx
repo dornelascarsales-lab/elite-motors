@@ -27,6 +27,28 @@ export default function App() {
 
   useEffect(() => { trackPageVisit(); }, []);
 
+  // Link direto pra um carro: ?carro=<código de estoque> abre a ficha dele (usado pelo
+  // WhatsApp/agente pra mandar o carro específico no site do Eder, não no da Summit).
+  useEffect(() => {
+    if (!inv.vehicles.length) return;
+    const alvo = new URLSearchParams(window.location.search).get('carro');
+    if (!alvo) return;
+    const car = inv.vehicles.find(v => String(v.stock || '').toLowerCase() === alvo.toLowerCase());
+    if (car) {
+      setOpen(car);
+      document.getElementById('grade')?.scrollIntoView({ block: 'start' });
+    }
+  }, [inv.vehicles]);
+
+  // Mantém a URL em sincronia: abrir um carro gera o link dele; fechar limpa.
+  const abrirCarro = car => {
+    setOpen(car);
+    const url = new URL(window.location.href);
+    if (car?.stock) url.searchParams.set('carro', car.stock);
+    else url.searchParams.delete('carro');
+    window.history.replaceState(null, '', url);
+  };
+
   const pickBand = band => {
     setFilters(f => ({ ...f, band, cat: 'all' }));
     document.getElementById('grade')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -49,7 +71,7 @@ export default function App() {
         <main className="w-full flex flex-col items-center">
           <Hero vehicles={inv.vehicles} />
           <CustomOrder />
-          <Inventory inv={inv} filters={filters} setFilters={setFilters} onOpen={setOpen} />
+          <Inventory inv={inv} filters={filters} setFilters={setFilters} onOpen={abrirCarro} />
           <Financing />
           <HowItWorks />
           <WhyUs vehicles={inv.vehicles} />
@@ -72,7 +94,7 @@ export default function App() {
         <WhatsIcon className="text-3xl" />
       </a>
 
-      <CarDialog car={open} onClose={() => setOpen(null)} />
+      <CarDialog car={open} onClose={() => abrirCarro(null)} />
     </div>
   );
 }
