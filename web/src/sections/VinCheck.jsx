@@ -1,6 +1,7 @@
 import { useLang } from '../i18n';
 
 // 04/10/2026: relatório de histórico pelo VIN (VinCheckup, link de afiliado do Eder no ClickBank).
+// 04/10: o Eder pediu pra tirar o aviso de afiliado debaixo do botão (avisado do risco FTC/ClickBank).
 // O botão passa pelo link curto /relatorio/?origem=site, que guarda o rastreio "site" no ClickBank.
 export const VIN_LINK = './relatorio/?origem=site';
 
@@ -24,7 +25,6 @@ export default function VinCheck() {
           >
             {t('vin.cta')}
           </a>
-          <span className="text-[0.6rem] text-white/35">{t('vin.disclaimer')}</span>
         </div>
       </div>
     </section>
