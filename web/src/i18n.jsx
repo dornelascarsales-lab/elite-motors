@@ -25,6 +25,11 @@ const dict = {
     'order.heroCta': 'Encomendar meu carro',
     'order.heroTag': 'Não achou? Eu encontro pra você',
 
+    'vin.kicker': 'Relatório do VIN',
+    'vin.title': 'Vai comprar um carro? Puxa o histórico antes de pagar.',
+    'vin.sub': 'Acidente, título (salvage, rebuilt), milhagem, leilão e roubo pelo número do VIN. É o relatório que eu uso. Nos carros da Elite, eu te mostro o histórico de graça.',
+    'vin.cta': 'Puxar o relatório',
+    'vin.disclaimer': 'Link de afiliado: posso ganhar comissão.',
     'fin.kicker': 'Financiamento',
     'fin.title': 'Taxas que cabem no seu bolso',
     'fin.sub': 'Eu faço a aplicação nos bancos por você e te explico cada número em português antes de assinar.',
@@ -188,6 +193,11 @@ const dict = {
     'order.heroCta': 'Encargar mi auto',
     'order.heroTag': '¿No lo encuentras? Yo lo busco',
 
+    'vin.kicker': 'Reporte del VIN',
+    'vin.title': '¿Vas a comprar un carro? Revisa el historial antes de pagar.',
+    'vin.sub': 'Accidentes, título (salvage, rebuilt), millaje, subasta y robo con el número VIN. Es el reporte que yo uso. En los carros de Elite, te muestro el historial gratis.',
+    'vin.cta': 'Ver el reporte',
+    'vin.disclaimer': 'Enlace de afiliado: puedo recibir una comisión.',
     'fin.kicker': 'Financiamiento',
     'fin.title': 'Tasas que caben en tu bolsillo',
     'fin.sub': 'Hago la aplicación con los bancos por ti y te explico cada número antes de firmar.',

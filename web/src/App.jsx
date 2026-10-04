@@ -14,6 +14,7 @@ import Clients from './sections/Clients';
 import Faq from './sections/Faq';
 import CustomOrder from './sections/CustomOrder';
 import Financing from './sections/Financing';
+import VinCheck from './sections/VinCheck';
 import FinalCta from './sections/FinalCta';
 import { useLang } from './i18n';
 import { useInventory, waLink } from './lib/inventory';
@@ -73,6 +74,7 @@ export default function App() {
           <Hero vehicles={inv.vehicles} />
           <CustomOrder />
           <Inventory inv={inv} filters={filters} setFilters={setFilters} onOpen={abrirCarro} />
+          <VinCheck />
           <Financing />
           <HowItWorks />
           <WhyUs vehicles={inv.vehicles} />
