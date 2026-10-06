@@ -138,6 +138,7 @@ const dict = {
     'car.vin': 'VIN',
     'car.was': 'antes',
     'car.close': 'Fechar',
+    'car.seeAll': 'Ver todos os carros',
 
     'clients.kicker': 'Clientes',
     'clients.title': 'Quem já comprou',
@@ -306,6 +307,7 @@ const dict = {
     'car.vin': 'VIN',
     'car.was': 'antes',
     'car.close': 'Cerrar',
+    'car.seeAll': 'Ver todos los autos',
 
     'clients.kicker': 'Clientes',
     'clients.title': 'Quienes ya compraron',

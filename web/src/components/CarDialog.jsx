@@ -40,6 +40,10 @@ export default function CarDialog({ car, onClose }) {
       onClick={e => e.target === dlg.current && onClose()}
       className="bg-transparent p-0 m-auto w-[min(1100px,96vw)] max-h-[94dvh] backdrop:bg-black/80 backdrop:backdrop-blur-sm"
     >
+      {/* 06/10: no celular o "x" ficava embaixo da foto e o cliente não achava. Agora fica fixo no canto, sempre visível. */}
+      <button onClick={onClose} aria-label={t('car.close')} className="absolute top-3 right-3 z-20 w-11 h-11 flex items-center justify-center rounded-full bg-black/75 border border-white/25 text-white shadow-lg backdrop-blur-sm hover:border-accent/60 active:scale-95">
+        <iconify-icon icon="solar:close-circle-linear" class="text-2xl"></iconify-icon>
+      </button>
       <div className="skeuo-card border border-white/10 rounded-sm text-white grid md:grid-cols-5 max-h-[94dvh] overflow-y-auto">
         <div className="md:col-span-3 bg-black/50 flex flex-col">
           <div className="relative aspect-[4/3] md:aspect-auto md:flex-1 md:min-h-[440px]">
@@ -66,9 +70,6 @@ export default function CarDialog({ car, onClose }) {
         </div>
 
         <div className="md:col-span-2 p-8 flex flex-col relative">
-          <button onClick={onClose} aria-label={t('car.close')} className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center border border-white/10 rounded-sm text-white/60 hover:text-white hover:border-white/30">
-            <iconify-icon icon="solar:close-square-linear" class="text-lg"></iconify-icon>
-          </button>
           <div className="text-[0.65rem] tracking-widest uppercase text-accent font-mono mb-2">{car.year} · {car.body}</div>
           <h3 className="text-3xl font-medium tracking-tight pr-10">{car.make} {car.model}</h3>
           <p className="text-sm text-white/50 font-light mt-1">{trimOf(car)}</p>
@@ -98,6 +99,12 @@ export default function CarDialog({ car, onClose }) {
           >
             <WhatsIcon className="text-base" /> {t('car.want')}
           </a>
+          <button
+            onClick={() => { onClose(); setTimeout(() => document.getElementById('grade')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50); }}
+            className="mt-3 w-full py-3.5 rounded-sm text-[0.7rem] tracking-widest uppercase font-medium flex items-center justify-center gap-2 border border-white/20 text-white/85 hover:border-accent/60 hover:text-white active:scale-[0.98] transition-all"
+          >
+            <iconify-icon icon="solar:widget-4-linear" class="text-base"></iconify-icon> {t('car.seeAll')}
+          </button>
           <p className="text-[0.65rem] text-white/35 leading-relaxed mt-4">{t('inv.disclaimer')}</p>
         </div>
       </div>
