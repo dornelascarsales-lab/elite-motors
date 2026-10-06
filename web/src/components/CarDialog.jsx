@@ -14,6 +14,10 @@ export default function CarDialog({ car, onClose }) {
     setPhoto(0);
     if (car) dlg.current?.showModal();
     else dlg.current?.close();
+    // trava a página de fundo enquanto a ficha está aberta (no celular ela "escorregava" junto)
+    document.documentElement.style.overflow = car ? 'hidden' : '';
+    document.body.style.overflow = car ? 'hidden' : '';
+    return () => { document.documentElement.style.overflow = ''; document.body.style.overflow = ''; };
   }, [car]);
 
   if (!car) return <dialog ref={dlg} />;
@@ -44,10 +48,11 @@ export default function CarDialog({ car, onClose }) {
       <button onClick={onClose} aria-label={t('car.close')} className="absolute top-3 right-3 z-20 w-11 h-11 flex items-center justify-center rounded-full bg-black/75 border border-white/25 text-white shadow-lg backdrop-blur-sm hover:border-accent/60 active:scale-95">
         <iconify-icon icon="solar:close-circle-linear" class="text-2xl"></iconify-icon>
       </button>
-      <div className="skeuo-card border border-white/10 rounded-sm text-white grid md:grid-cols-5 max-h-[94dvh] overflow-y-auto">
-        <div className="md:col-span-3 bg-black/50 flex flex-col">
+      {/* 06/10: grid-cols-1 + min-w-0: a faixa de miniaturas esticava a coluna pra 1200px no celular (foto gigante e a ficha escorregando pros lados) */}
+      <div className="skeuo-card border border-white/10 rounded-sm text-white grid grid-cols-1 md:grid-cols-5 max-h-[94dvh] overflow-y-auto overflow-x-hidden overscroll-contain">
+        <div className="md:col-span-3 bg-black/50 flex flex-col min-w-0">
           <div className="relative aspect-[4/3] md:aspect-auto md:flex-1 md:min-h-[440px]">
-            {photos[photo] && <img src={photos[photo]} alt={`${car.title} — foto ${photo + 1}`} className="absolute inset-0 w-full h-full object-cover" />}
+            {photos[photo] && <img src={photos[photo]} alt={`${car.title} — foto ${photo + 1}`} className="absolute inset-0 w-full h-full object-contain md:object-cover bg-black" />}
             {photos.length > 1 && (
               <>
                 <button aria-label="Foto anterior" onClick={() => { setPhoto((photo - 1 + photos.length) % photos.length); trackPhotoClick(car); }} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-sm bg-black/60 border border-white/10 hover:border-accent/50">
@@ -69,7 +74,7 @@ export default function CarDialog({ car, onClose }) {
           </div>
         </div>
 
-        <div className="md:col-span-2 p-8 flex flex-col relative">
+        <div className="md:col-span-2 p-6 md:p-8 flex flex-col relative min-w-0">
           <div className="text-[0.65rem] tracking-widest uppercase text-accent font-mono mb-2">{car.year} · {car.body}</div>
           <h3 className="text-3xl font-medium tracking-tight pr-10">{car.make} {car.model}</h3>
           <p className="text-sm text-white/50 font-light mt-1">{trimOf(car)}</p>
