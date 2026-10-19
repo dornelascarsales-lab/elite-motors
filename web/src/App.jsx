@@ -32,22 +32,26 @@ export default function App() {
   // WhatsApp/agente pra mandar o carro específico no site do Eder, não no da Summit).
   useEffect(() => {
     if (!inv.vehicles.length) return;
-    const alvo = new URLSearchParams(window.location.search).get('carro');
+    const alvo = new URLSearchParams(window.location.search).get('carro')
+      || (window.location.pathname.match(/^\/carro\/([^/]+)/) || [])[1];
     if (!alvo) return;
     const a = alvo.toLowerCase();
     const car = inv.vehicles.find(v => String(v.stock || '').toLowerCase() === a || String(v.vin || '').toLowerCase() === a);
     if (car) {
-      setOpen(car);
+      abrirCarro(car);   // troca ?carro= por /carro/<código>/ na barra
       document.getElementById('grade')?.scrollIntoView({ block: 'start' });
     }
   }, [inv.vehicles]);
 
-  // Mantém a URL em sincronia: abrir um carro gera o link dele; fechar limpa.
+  // Mantém a URL em sincronia: abrir um carro põe na barra o link /carro/<código>/ (a página estática
+  // dele tem a foto do carro na prévia do WhatsApp; o ?carro= mostrava sempre a foto da home). Fechar limpa.
+  // O <base href="/"> do index.html mantém imagens e vídeos com caminho relativo funcionando nesse endereço.
   const abrirCarro = car => {
     setOpen(car);
     const url = new URL(window.location.href);
-    if (car?.stock || car?.vin) url.searchParams.set('carro', car.stock || car.vin);
-    else url.searchParams.delete('carro');
+    url.searchParams.delete('carro');
+    const cod = car?.stock || car?.vin;
+    url.pathname = cod ? `/carro/${encodeURIComponent(cod)}/` : '/';
     window.history.replaceState(null, '', url);
   };
 
