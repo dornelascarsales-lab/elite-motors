@@ -18,9 +18,25 @@ const titleCase = s => (s || '').toLowerCase().split(/(\s+)/)
   .replace(/\bXdrive/g, 'xDrive').replace(/\bSdrive/g, 'sDrive').replace(/\b4motion/g, '4MOTION')
   .replace(/\bFt\b/g, 'ft').replace(/\bW\//g, 'w/');
 
-async function scrapeListingPage(page, n) {
-  await page.goto(`${BASE}/inventory/?page_no=${n}`, { waitUntil: 'domcontentloaded', timeout: 90000 });
+// 23/10/2026: a Summit trocou a paginação (?page_no=N) por rolagem infinita de 9 em 9 carros.
+// Agora abre /inventory/ uma vez e rola até parar de chegar carro novo.
+async function loadAllByScroll(page) {
+  await page.goto(`${BASE}/inventory/`, { waitUntil: 'domcontentloaded', timeout: 90000 });
   await page.waitForSelector('.vehicle-container', { timeout: 30000 }).catch(() => {});
+  await page.waitForTimeout(4000);
+  await page.mouse.move(700, 500).catch(() => {});
+  let last = 0, stable = 0;
+  for (let i = 0; i < 40 && stable < 3; i++) {
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await page.mouse.wheel(0, 3000).catch(() => {});
+    await page.waitForTimeout(3500);
+    const n = await page.$$eval('.vehicle-container', e => e.length);
+    console.log(`  rolagem ${i + 1}: ${n} carros`);
+    if (n === last) stable++; else { stable = 0; last = n; }
+  }
+}
+
+async function scrapeListingPage(page) {
   return page.$$eval('.vehicle-container', els => els.map(el => {
     const q = s => el.querySelector(s);
     const txt = s => (q(s)?.textContent || '').trim();
@@ -97,23 +113,12 @@ async function main() {
     headless: true,
     args: ['--disable-blink-features=AutomationControlled'],
   });
-  const page = await browser.newPage({ userAgent: UA, locale: 'en-US' });
+  const page = await browser.newPage({ userAgent: UA, locale: 'en-US', viewport: { width: 1400, height: 1000 } });
 
-  await page.goto(`${BASE}/inventory/?page_no=1`, { waitUntil: 'domcontentloaded', timeout: 90000 });
-  await page.waitForSelector('[data-total-pages]', { timeout: 30000 }).catch(() => {});
+  await loadAllByScroll(page);
   const declared = parseInt(await page.$eval('[data-total-pages]', el => el.dataset.totalPages).catch(() => '0'), 10);
-  console.log(`Summit: ${declared || '?'} páginas de estoque`);
-
-  // Lê página por página até acabar (não confia só no número declarado)
-  const listed = [];
-  for (let n = 1; n <= 30; n++) {
-    const items = await scrapeListingPage(page, n);
-    const fresh = items.filter(v => !listed.some(l => l.vin === v.vin));
-    console.log(`  página ${n}: ${items.length} carros`);
-    if (!fresh.length) break;
-    listed.push(...fresh);
-    if (declared && n >= declared) break;
-  }
+  const listed = await scrapeListingPage(page);
+  console.log(`Summit: ${listed.length} carros na lista (${declared || '?'} blocos de 9)`);
 
   const unique = [...new Map(listed.filter(v => v.vin && v.url).map(v => [v.vin, v])).values()];
   if (unique.length === 0) throw new Error('Nenhum carro encontrado — layout da Summit mudou ou Cloudflare bloqueou');
