@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-30T16:41:38.926Z",
+  "updatedAt": "2026-10-30T22:35:56.296Z",
   "source": "https://www.thesummitmotorsports.com/inventory/",
-  "count": 36,
+  "count": 37,
   "vehicles": [
     {
       "vin": "1C6SRFJPXTN150953",
@@ -44,6 +44,45 @@
         "https://imagescf.dealercenter.net/640/480/202610-4aa17f4397a041ea97154f27dfa93b49.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b781de8394dc472d911817886c1c250a.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-ab8b6ab4507146ba9e288d058cf7b41d.jpg"
+      ]
+    },
+    {
+      "vin": "1GTUUDED1TZ240361",
+      "stock": "",
+      "url": "https://www.thesummitmotorsports.com/inventory/gmc/sierra-1500-crew-cab/240361/",
+      "imageCount": 0,
+      "name": "2026 GMC SIERRA 1500 CREW CAB",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$47,000",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 20889,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2026,
+      "make": "GMC",
+      "model": "Sierra 1500 Crew Cab",
+      "title": "2026 GMC Sierra 1500 Crew Cab SLT Pickup 4D 5 3/4 ft",
+      "body": "PICKUP",
+      "fuel": "Gasoline",
+      "engine": "V8, ECOTEC3, DFM, 5.3 LITER",
+      "color": "Gray",
+      "interior": "Black",
+      "mpg": "-/-",
+      "priceValue": 47000,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-5b9ed66f287d403eb9764a4c9c7830de.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-89bc3c24be3d41a9832e33478a04054e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-3cb3c73aac274ba0a51cc0ec038dfc01.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-3d60b1a11dc54ca785d05ebbcc976d90.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-a640249c4d2b41c4be42e4a0387e4716.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-3f8a57a63a6a4be3894073bf2c2ff106.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-a7e08d0e3133482dab2eac457818ea64.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-c04b8f416f3c4c7d8e0661d793bdcc28.jpg"
       ]
     },
     {
@@ -1577,16 +1616,16 @@
       "priceValue": null,
       "photos": [
         "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-684328dbf3d34656bd93541cd9d51330.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-43ff329e0c0445b5b87f8e66fd86b45d.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d033faed86174ae5a99bb6788cf0211c.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-9a37e30f6a86403cb0f93b1ab2c76d87.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3f8a57a63a6a4be3894073bf2c2ff106.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-a7e08d0e3133482dab2eac457818ea64.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-5b9ed66f287d403eb9764a4c9c7830de.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-3d60b1a11dc54ca785d05ebbcc976d90.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-684328dbf3d34656bd93541cd9d51330.jpg"
+        "https://imagescf.dealercenter.net/640/480/202610-3d60b1a11dc54ca785d05ebbcc976d90.jpg"
       ]
     },
     {
@@ -1616,16 +1655,16 @@
       "priceValue": null,
       "photos": [
         "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-684328dbf3d34656bd93541cd9d51330.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-43ff329e0c0445b5b87f8e66fd86b45d.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d033faed86174ae5a99bb6788cf0211c.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-9a37e30f6a86403cb0f93b1ab2c76d87.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3f8a57a63a6a4be3894073bf2c2ff106.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-a7e08d0e3133482dab2eac457818ea64.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-5b9ed66f287d403eb9764a4c9c7830de.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-3d60b1a11dc54ca785d05ebbcc976d90.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-684328dbf3d34656bd93541cd9d51330.jpg"
+        "https://imagescf.dealercenter.net/640/480/202610-3d60b1a11dc54ca785d05ebbcc976d90.jpg"
       ]
     },
     {
