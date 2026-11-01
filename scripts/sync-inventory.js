@@ -134,6 +134,32 @@ async function main() {
   }
   await browser.close();
 
+  // Rede de segurança (31/10/2026): se a Summit falhar num carro (página de detalhe sem fotos ou erro),
+  // mantém as fotos e os dados da última vez em que ele veio completo, em vez de publicar o carro sem foto.
+  const CACHE_PATH = path.join(path.dirname(OUT_PATH), 'fotos-cache.json');
+  let cache = {};
+  try { cache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8')); } catch {}
+  try {
+    for (const v of JSON.parse(fs.readFileSync(OUT_PATH, 'utf-8')).vehicles || []) {
+      if (v.vin && v.photos && v.photos.length && !cache[v.vin]) cache[v.vin] = v;
+    }
+  } catch {}
+  let recuperados = 0;
+  for (let i = 0; i < vehicles.length; i++) {
+    const v = vehicles[i], antigo = cache[v.vin];
+    if ((!v.photos || v.photos.length === 0) && antigo) {
+      const junto = { ...antigo };
+      for (const [k, val] of Object.entries(v)) if (val !== '' && val !== null && val !== undefined && !(Array.isArray(val) && !val.length)) junto[k] = val;
+      junto.photos = antigo.photos;
+      vehicles[i] = junto; recuperados++;
+    }
+  }
+  for (const v of vehicles) if (v.vin && v.photos && v.photos.length) cache[v.vin] = v;
+  fs.writeFileSync(CACHE_PATH, JSON.stringify(cache));
+  const semFoto = vehicles.filter(v => !v.photos || !v.photos.length).length;
+  if (recuperados) console.log(`  ${recuperados} carro(s) sem foto na Summit: mantive as fotos e os dados da última vez`);
+  if (semFoto) console.warn(`  atenção: ${semFoto} carro(s) continuam sem foto (nunca vieram completos)`);
+
   vehicles.sort((a, b) => (b.priceValue || 0) - (a.priceValue || 0));
 
   // Trava: se vier bem menos carro que da última vez, provavelmente a leitura falhou — não publica.
