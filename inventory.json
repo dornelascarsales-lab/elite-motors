@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-01T00:25:30.279Z",
+  "updatedAt": "2026-11-02T20:01:21.002Z",
   "source": "https://www.thesummitmotorsports.com/inventory/",
-  "count": 38,
+  "count": 37,
   "vehicles": [
     {
       "vin": "1C6SRFJPXTN150953",
@@ -114,22 +114,22 @@
       "mpg": "17/22",
       "priceValue": 44999,
       "photos": [
-        "https://imagescf.dealercenter.net/640/480/202610-684328dbf3d34656bd93541cd9d51330.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-1fa416376a2f4f76af29bf9a41450b03.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-6319ff48fb71467591d5e4ad22df3ba5.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-943315944b0d4a9e98c28a58e9c289e2.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-ff253a8baf3d4b78828f93802de56078.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-ad675cc474244df48843de6ce05213e7.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-57089521147343f08ee502b495166283.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-3d33023dfa834f8a96eaf4824bd0c2be.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-512578941f4d420ea60ff97d878ae96c.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-fd4c330bfb5b4b9686d2c99a051d5a46.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-56812ef87b374d8a8ef90f4b59df2d47.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e281a9e5b0f04e4688fb0018d41eed47.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e2933ae5c4fb43128bfcbeb228fcbf61.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-1a6cbfb8f1824a1c99196f77f9af0d5a.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-4dfe3b656b0c4c5480008cbe98b0da4d.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-43fbf60203164a4b967de913b776257b.jpg"
+        "https://imagescf.dealercenter.net/640/480/202611-db026ee1b34342caa8e628a6626954e6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-d252c087c9c24135989d9b6addbd8194.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-1880fd1f143b4bdba3426c3727df7809.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-dc5101622b5e435c9985af50f6854236.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-2be4ac680b764860a7b12d6442a7420a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-3f1d1e18eeea4755999d27b6cfc7912b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-d74f04a48ba84c08aced7f0fc862d146.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-91546b1b217a47c8a1d328077c09a74a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-939daf1bad6a4c77b7fc05476baa5c48.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-1f2dc4417a624e0aaccf983befe169bd.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-e9fc1e883f91459d8e8669d74cedcf39.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-a15ffa6b3ddf46d79fe38daeafb749db.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-91dd8d70161348ddbb6729e5002356aa.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-f41c07a104d04f69b800479cf4652bc6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-2ed5780088bc4ce5b27ca4b9aae664e6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-9bb6c3308d2d4984a13f666ee01999e4.jpg"
       ]
     },
     {
@@ -150,7 +150,7 @@
       "make": "RAM",
       "model": "3500 Crew Cab & Chassis",
       "title": "2024 RAM 3500 Crew Cab & Chassis Tradesman Cab & Chassis 4D",
-      "body": "CAB CHASSIS",
+      "body": "CAB_CHASSIS",
       "fuel": "Diesel",
       "engine": "6-CYL, TURBO DIESEL, 6.7 LITER",
       "color": "White",
@@ -320,6 +320,41 @@
         "https://imagescf.dealercenter.net/640/480/202610-7b1729ed9da54d5ca76cac80c70b1ac9.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-18ca4c0efd884c10b1c8e1486559149c.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-93545cbdbe534b7781e109679c7d75d6.jpg"
+      ]
+    },
+    {
+      "vin": "3GCUDFE89RG192003",
+      "stock": "192003",
+      "url": "https://www.thesummitmotorsports.com/inventory/chevrolet/silverado-1500-crew-cab/192003/",
+      "imageCount": 7,
+      "name": "2024 CHEVROLET SILVERADO 1500 CREW CAB",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$35,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 122407,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2024,
+      "make": "Chevrolet",
+      "model": "Silverado 1500 Crew Cab",
+      "title": "2024 Chevrolet Silverado 1500 Crew Cab LT Trail Boss Pickup 4D 5 3/4 ft",
+      "body": "PICKUP",
+      "fuel": "Diesel",
+      "engine": "6-CYL, TURBO DIESEL, 3.0 LITER",
+      "color": "Gray",
+      "interior": "Black",
+      "mpg": "23/27",
+      "priceValue": 35999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202611-fbf6f83d4fcf40e2b4c9f739a74508df.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-b47c45bfe5154ebc88e9ab1a51980492.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-2ee016fdbb03414287dc11f5e26dd59a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-3e232e459f9b4c9a970feadfcab19818.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-c0c036027a1d482fa835f854bd257975.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-877d9817bd9940f9920c005f95899f6f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-84e05a98eb394dbaa60f93dc2eb32706.jpg"
       ]
     },
     {
@@ -970,15 +1005,15 @@
       "priceValue": 21999,
       "photos": [
         "https://imagescf.dealercenter.net/640/480/202610-b3da4f917b814e4f87894ae08c2105ac.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-310dfaaf54294253a126ebeb494c5e72.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-f62f2edcc71d456ea74661d720e4abb4.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-db86f892e4044aa0ab86550090d7987b.jpg",
         "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b215e993200d4972bb8d119b4eb3b227.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e9614384f73b4000a36a67eac1a639e8.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-db86f892e4044aa0ab86550090d7987b.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-9c3947c0e10d40f98a42cc30496ec281.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-d22b371bccf1472f86c76330f0828181.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-aeb9d5524c594afcb6a2daeb146da302.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-d22b371bccf1472f86c76330f0828181.jpg"
+        "https://imagescf.dealercenter.net/640/480/202610-9c3947c0e10d40f98a42cc30496ec281.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e9614384f73b4000a36a67eac1a639e8.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-310dfaaf54294253a126ebeb494c5e72.jpg"
       ]
     },
     {
@@ -1112,60 +1147,6 @@
         "https://imagescf.dealercenter.net/640/480/202610-2ef4d698ce5e4f3b853f13d1226f20d5.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-8ea4d12cda84447d86653b71437ccd03.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-9795daf96e3e4354a6034b0603b343d9.jpg"
-      ]
-    },
-    {
-      "vin": "1C6RR7YT3HS719500",
-      "stock": "TR719500",
-      "url": "https://www.thesummitmotorsports.com/inventory/ram/1500-crew-cab/tr719500/",
-      "imageCount": 26,
-      "name": "2017 RAM 1500 CREW CAB",
-      "price": null,
-      "totalPrice": null,
-      "priceText": "$16,500",
-      "wasPrice": null,
-      "dealerFee": null,
-      "mileage": 164120,
-      "transmission": "AUTOMATIC",
-      "drivetrain": "4WD",
-      "year": 2017,
-      "make": "RAM",
-      "model": "1500 Crew Cab",
-      "title": "2017 RAM 1500 Crew Cab Rebel Pickup 4D 5 1/2 ft",
-      "body": "PICKUP",
-      "fuel": "Gasoline",
-      "engine": "V8, HEMI, 5.7 LITER",
-      "color": "Black",
-      "interior": "Black",
-      "mpg": "15/21",
-      "priceValue": 16500,
-      "photos": [
-        "https://imagescf.dealercenter.net/640/480/202610-5b9ed66f287d403eb9764a4c9c7830de.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-26a551707ba84af1a64f027869901d9e.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-269ad439cd70458f98ea31911c5ea343.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-6bd716b3fd16424396ecfeb578adb17c.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-490d26c1ae7e42658f95e93f92491514.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-22a0920fe3164f1fbffa5f39b5874652.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-9c2e959fd9f44939813095955f1a0245.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-b3bf5fd77faf4280bf1358d6fdf1b564.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-523b8acd767043b9b6fc79115cacc1e2.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-5179f31e1b2e41be86612611709f9cd4.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e33ba068058b4c4fb4adcbd4efcc9928.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-12cfce9193ff4872a859977fdab45ab5.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-7f4107564fa84544b6f00164cef150a1.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-88d7fd88f5e643f08f5170ad70f516ee.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-2d7d00a87892404793b54f9e1e0038ed.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-757adac634584baca45aac400077feac.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-6ed643f2de28406ca7acd73d0d7423e2.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-f79eea08947346909a91f9f333603579.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-6da63506181c497b9c43b57d1af6506e.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-f135ce995188434dbaea6c8a98e985c3.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e2278e780cc74eb5ba28dca35df6b6ef.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e50fc923cb6646788146c0c9d4a54c3f.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-acfbe1ffbece435788ab6cdd53251181.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-1a24cd7faa9d4c91946efa38e8ad670f.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-4aa284e237c54ecf820c5fa89fa2e036.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-97bee08f6d25464aa18fed21802cb625.jpg"
       ]
     },
     {
@@ -1545,9 +1526,9 @@
         "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-541c0a335b764769951d0aa89942d452.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b215e993200d4972bb8d119b4eb3b227.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-6a5dbc42293e4821acda2ebe153dc601.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-cd1129a53b0443a5938e83d2f5297f93.jpg",
-        "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
         "https://imagescf.dealercenter.net/640/480/202603-0d57422c3f5449b9b1496b5f16b210e1.jpg"
       ]
     },
@@ -1578,51 +1559,12 @@
       "priceValue": null,
       "photos": [
         "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-6a5dbc42293e4821acda2ebe153dc601.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-cd1129a53b0443a5938e83d2f5297f93.jpg",
-        "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
         "https://imagescf.dealercenter.net/640/480/202603-0d57422c3f5449b9b1496b5f16b210e1.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-541c0a335b764769951d0aa89942d452.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b215e993200d4972bb8d119b4eb3b227.jpg"
-      ]
-    },
-    {
-      "vin": "1GTUUDED1TZ240361",
-      "stock": "",
-      "url": "https://www.thesummitmotorsports.com/inventory/gmc/sierra-1500-crew-cab/240361/",
-      "imageCount": 0,
-      "name": "2026 GMC SIERRA 1500 CREW CAB",
-      "price": null,
-      "totalPrice": null,
-      "priceText": "Call For Price",
-      "wasPrice": null,
-      "dealerFee": null,
-      "mileage": 20889,
-      "transmission": "AUTOMATIC",
-      "drivetrain": "4WD",
-      "year": 2026,
-      "make": "GMC",
-      "model": "Sierra 1500 Crew Cab",
-      "title": "2026 GMC Sierra 1500 Crew Cab SLT Pickup 4D 5 3/4 ft",
-      "body": "PICKUP",
-      "fuel": "Gasoline",
-      "engine": "V8, ECOTEC3, DFM, 5.3 LITER",
-      "color": "Gray",
-      "interior": "Black",
-      "mpg": "-/-",
-      "priceValue": null,
-      "photos": [
-        "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-5b9ed66f287d403eb9764a4c9c7830de.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-d033faed86174ae5a99bb6788cf0211c.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-9a37e30f6a86403cb0f93b1ab2c76d87.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-a640249c4d2b41c4be42e4a0387e4716.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-43ff329e0c0445b5b87f8e66fd86b45d.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-684328dbf3d34656bd93541cd9d51330.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-281e6051744c4af9a3993c66ac3c8ee7.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-529418c7c82542b684efd4f16ea44121.jpg"
       ]
     },
     {
@@ -1652,16 +1594,16 @@
       "priceValue": null,
       "photos": [
         "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-3f8a57a63a6a4be3894073bf2c2ff106.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3d60b1a11dc54ca785d05ebbcc976d90.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-9a37e30f6a86403cb0f93b1ab2c76d87.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-529418c7c82542b684efd4f16ea44121.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-a7e08d0e3133482dab2eac457818ea64.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-3f8a57a63a6a4be3894073bf2c2ff106.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-43ff329e0c0445b5b87f8e66fd86b45d.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-684328dbf3d34656bd93541cd9d51330.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-5b9ed66f287d403eb9764a4c9c7830de.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d033faed86174ae5a99bb6788cf0211c.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-9a37e30f6a86403cb0f93b1ab2c76d87.jpg"
+        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-db026ee1b34342caa8e628a6626954e6.jpg"
       ]
     },
     {
@@ -1691,16 +1633,16 @@
       "priceValue": null,
       "photos": [
         "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-3f8a57a63a6a4be3894073bf2c2ff106.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3d60b1a11dc54ca785d05ebbcc976d90.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-9a37e30f6a86403cb0f93b1ab2c76d87.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-529418c7c82542b684efd4f16ea44121.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-a7e08d0e3133482dab2eac457818ea64.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-3f8a57a63a6a4be3894073bf2c2ff106.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-43ff329e0c0445b5b87f8e66fd86b45d.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-684328dbf3d34656bd93541cd9d51330.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-5b9ed66f287d403eb9764a4c9c7830de.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d033faed86174ae5a99bb6788cf0211c.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-9a37e30f6a86403cb0f93b1ab2c76d87.jpg"
+        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-db026ee1b34342caa8e628a6626954e6.jpg"
       ]
     },
     {
@@ -1730,9 +1672,9 @@
       "priceValue": null,
       "photos": [
         "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-6a5dbc42293e4821acda2ebe153dc601.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-cd1129a53b0443a5938e83d2f5297f93.jpg",
-        "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
         "https://imagescf.dealercenter.net/640/480/202603-0d57422c3f5449b9b1496b5f16b210e1.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-541c0a335b764769951d0aa89942d452.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b215e993200d4972bb8d119b4eb3b227.jpg"
