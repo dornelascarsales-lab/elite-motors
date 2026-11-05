@@ -40,7 +40,7 @@ export default function CustomOrder() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-6">
           <div className="flex items-center space-x-4 mb-4 text-[0.65rem] tracking-widest uppercase text-accent font-medium clip-slide delay-100">
-            <span>02</span>
+            <span>03</span>
             <div className="w-12 h-px bg-accent/50"></div>
             <span>{t('order.kicker')}</span>
           </div>

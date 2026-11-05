@@ -76,8 +76,9 @@ export default function App() {
         <Navbar />
         <main className="w-full flex flex-col items-center">
           <Hero vehicles={inv.vehicles} />
-          <CustomOrder />
           <Inventory inv={inv} filters={filters} setFilters={setFilters} onOpen={abrirCarro} />
+          {/* 04/11 (Eder): "Não achou o seu carro?" só faz sentido depois de ver o estoque */}
+          <CustomOrder />
           <VinCheck />
           <Financing />
           <HowItWorks />
