@@ -164,7 +164,8 @@ async function main() {
 
   // Trava: se vier bem menos carro que da última vez, provavelmente a leitura falhou — não publica.
   let previous = 0;
-  try { previous = JSON.parse(fs.readFileSync(OUT_PATH, 'utf-8')).count || 0; } catch {}
+  // 04/11: o arquivo também tem os carros da Velocce; a trava compara só com os da Summit
+  try { previous = (JSON.parse(fs.readFileSync(OUT_PATH, 'utf-8')).vehicles || []).filter(v => v.loja !== 'velocce').length; } catch {}
   if (previous >= 10 && vehicles.length < previous * 0.6 && !process.env.FORCE_SYNC) {
     throw new Error(`Só ${vehicles.length} carros contra ${previous} da última vez. Não atualizei (use FORCE_SYNC=1 se for real).`);
   }
