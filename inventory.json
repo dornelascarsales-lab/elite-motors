@@ -1,8 +1,135 @@
 {
-  "updatedAt": "2026-11-04T20:01:35.468Z",
+  "updatedAt": "2026-11-05T03:20:25.030Z",
   "source": "https://www.thesummitmotorsports.com/inventory/",
-  "count": 38,
+  "count": 62,
   "vehicles": [
+    {
+      "vin": "3C63RRHL2SG509499",
+      "stock": "509499",
+      "url": "https://www.velocceauto.com/inventory/ram/3500-crew-cab/509499/",
+      "imageCount": 8,
+      "name": "2025 RAM 3500 CREW CAB",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$52,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 110822,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2025,
+      "make": "RAM",
+      "model": "3500 Crew Cab",
+      "title": "2025 RAM 3500 Crew Cab Big Horn Pickup 4D 8 ft",
+      "body": "PICKUP",
+      "fuel": "Diesel",
+      "engine": "6-CYL, HO, TURBO DIESEL, 6.7 LITER",
+      "color": "Gray",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 52999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202611-287878ea9fe14f7d8d71c38aada7f240.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-c49e6872b1274bfca0c4206db4a2be78.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-b0ddb47826a24c94a133f1235e8dd431.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-ef14e725a3aa4fa792693b5dec32c650.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-f00a33901b1b4dc89a9995d25fdb338e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-86f8559ee6ed4dd9a229a759c7f8ebf9.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-91ee5a6e93ef4bcd83592c7b64e7f875.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-49e9163cb2db45c2bd9764e55929963c.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "1C4RJGBR6TC253691",
+      "stock": "253691",
+      "url": "https://www.velocceauto.com/inventory/jeep/grand-cherokee/253691/",
+      "imageCount": 22,
+      "name": "2026 JEEP GRAND CHEROKEE",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$49,990",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 350,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "2WD",
+      "year": 2026,
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "title": "2026 Jeep Grand Cherokee Limited Sport Utility 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, TURBO, 2.0 LITER",
+      "color": "-",
+      "interior": "-",
+      "mpg": "",
+      "priceValue": 49990,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202609-4d548a2d00dc4559b8ee0730cf98aae4.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-ae97d01dd00d4a949a84ac0276117978.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-e371fd482a494a02965d45c83a1a8747.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-3546f8aaba404359bf24a9db1046a977.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-5de7d89ba4b84406bb5cec30c62c7746.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-96f3d216535d42779299c91b86802b4c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-86e2066cac20461b90e3e2e187947709.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-77a14d0f4e964e6ab28e31977901d340.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-fcbc261bbeab4cde81a86ea8af0ed5af.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-8ff1791af34b4c6c97570a8da0fe7378.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-8448031fc28f4ae6beff51e1b6e1e589.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-39b68cb9a6254f56a954e74fefdef545.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-27c6bfeb4371441f92cf68ede3dcf6b6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-c82e0b3ba85744ce9377df4c34eeceb4.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-7665eec609a94f7b9723232896c2e6b6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-ebf368d274824a44931b5bb182fa267e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-290be69c9bf8470cb5d6548e99bfef69.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-360e3b431c1b446a8031b816c44839e2.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-0cb489fa0cff449182540fcd820cb6ce.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-571dee0b7eb4469aaaaeba38e61c3373.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-e8534fe412c6432eac637ced1d67fbd7.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-ecf3f71ea011479886cc31714cc6a378.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "1GYS4FKL9MR332733",
+      "stock": "332733",
+      "url": "https://www.velocceauto.com/inventory/cadillac/escalade/332733/",
+      "imageCount": 10,
+      "name": "2021 CADILLAC ESCALADE",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$48,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 113615,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2021,
+      "make": "Cadillac",
+      "model": "Escalade",
+      "title": "2021 Cadillac Escalade Sport SUV 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "V8, 6.2 LITER",
+      "color": "White",
+      "interior": "Beige",
+      "mpg": "",
+      "priceValue": 48999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202611-865e3e1aa1834baaa630cff4cd73d17f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-31c59a75a9a04d318ecf72ecb3d23349.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-04a7044e44304723b11b51c7c184452a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-64ac9cdf16aa4f9cb8640fd998e6f380.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-eb07978ace16442890f507cd7be9d29e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-096ac27844c845d79835e8f95b8aca13.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-84a051f3909d4ccea239e574844c6d0b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-5d87499ee5044dc1b4ec6a5ace6444b0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-c46a14f202ea4735a0b9257387727d4e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-5ebd3d5c386c414f97b82345ec301563.jpg"
+      ],
+      "loja": "velocce"
+    },
     {
       "vin": "1C6SRFJPXTN150953",
       "stock": "150953",
@@ -44,7 +171,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-4aa17f4397a041ea97154f27dfa93b49.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b781de8394dc472d911817886c1c250a.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-ab8b6ab4507146ba9e288d058cf7b41d.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1GTUUEE87PZ300545",
@@ -86,7 +214,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-3006ba4877a0496296ef295d389d8595.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-a3f4b158bac84af98e5d7159f028a378.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-a0912770d3874331b88bea4e8c692f5e.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1C6SRFHT6PN599863",
@@ -130,7 +259,8 @@
         "https://imagescf.dealercenter.net/640/480/202611-f41c07a104d04f69b800479cf4652bc6.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-2ed5780088bc4ce5b27ca4b9aae664e6.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-9bb6c3308d2d4984a13f666ee01999e4.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "3C7WRTCL5RG175265",
@@ -174,7 +304,8 @@
         "https://imagescf.dealercenter.net/640/480/202609-2d48738814c547bfb7353b3ca4b075a6.jpg",
         "https://imagescf.dealercenter.net/640/480/202609-6b94a81f5c05405396f2bc77fbaddac1.jpg",
         "https://imagescf.dealercenter.net/640/480/202609-673aaa04f04b4e5b97c853edc902b69e.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1GYS4KKL6MR240696",
@@ -229,7 +360,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-366a59cb9f7240dfb7062fd02973cd74.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-74d029470f5a4283b4d795e007058414.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-606d43bd392a4ae8bd97107799d61a0b.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1C6SRFJP4SN574644",
@@ -278,7 +410,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-b82cbc14b8574de2b16bc8d017d87ecb.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d3495d8c3ec140699eff2022d587e538.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-791e3d7a67af49df9cd27a8c9cc7b370.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1C6SRFHT6NN387235",
@@ -320,7 +453,45 @@
         "https://imagescf.dealercenter.net/640/480/202610-7b1729ed9da54d5ca76cac80c70b1ac9.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-18ca4c0efd884c10b1c8e1486559149c.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-93545cbdbe534b7781e109679c7d75d6.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "1C6SRFJT4PN503738",
+      "stock": "503738",
+      "url": "https://www.velocceauto.com/inventory/ram/1500-crew-cab/503738/",
+      "imageCount": 8,
+      "name": "2023 RAM 1500 CREW CAB",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$38,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 91020,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2023,
+      "make": "RAM",
+      "model": "1500 Crew Cab",
+      "title": "2023 RAM 1500 Crew Cab Laramie Pickup 4D 5 1/2 ft",
+      "body": "PICKUP",
+      "fuel": "Gasoline",
+      "engine": "V8, HEMI, ETORQUE, 5.7 LITER",
+      "color": "Gray",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 38999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202611-aa4e38ffcdbc41c79e45a70b4940bd4a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-dd1e5703cc5444ef9f545cfba88838e8.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-39b38f48e1184f0d836f1b7a24f445d7.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-0e3b8d6a32ea433395a3c1816e4cfe32.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-580f1e9a1cc24900975906a1b314b18a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-71d2a0e8b4d84666a1a09b6fcfd85962.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-10179d8a326f44ab84bf2ccad721dc0d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-4fc8e64b8fdb490d9c1ae55007ce5866.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "3GCUDFE89RG192003",
@@ -355,7 +526,8 @@
         "https://imagescf.dealercenter.net/640/480/202611-c0c036027a1d482fa835f854bd257975.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-877d9817bd9940f9920c005f95899f6f.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-84e05a98eb394dbaa60f93dc2eb32706.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1C6SRFKT6LN315764",
@@ -394,7 +566,88 @@
         "https://imagescf.dealercenter.net/640/480/202611-c014176ca3e44a63b4ff5d75fb1a8967.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-8cd0d615309c4de7844ad7bfa17d81fe.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-5860085bf4a04150be11ec34efc1cf6d.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "1C4SJVBP2PS557696",
+      "stock": "557696",
+      "url": "https://www.velocceauto.com/inventory/jeep/wagoneer/557696/",
+      "imageCount": 10,
+      "name": "2023 JEEP WAGONEER",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$35,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 88150,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Wagoneer",
+      "title": "2023 Jeep Wagoneer Series Ii Carbide Sport Utility 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "6-CYL, TWIN TURBO, 3.0 LITER",
+      "color": "White",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 35999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202611-e51ebffa794740d4b05264e65631c34d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-450f1e2798f94e5888335738ea4f1153.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-f9db5ceadd3d4221a0cd56443f2d93ea.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-d122c860df3c4c07b3df07064c721dd0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-c4abf55bb72440e1bfd520a13898130e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-23292a91a7294cb289673e7f433cea30.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-03c93cef570141cb8420e5a4d6d54c06.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-a08bae37d55d401488062e0d4e936be2.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-38604b1226fe4f94ab4349d952de0b06.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-71c90634a9e94df3b88de43fbedca6d5.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "1C6SRFHT8KN526261",
+      "stock": "526261",
+      "url": "https://www.velocceauto.com/inventory/ram/1500-crew-cab/526261/",
+      "imageCount": 12,
+      "name": "2019 RAM 1500 CREW CAB",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$32,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 103766,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2019,
+      "make": "RAM",
+      "model": "1500 Crew Cab",
+      "title": "2019 RAM 1500 Crew Cab Limited Pickup 4D 5 1/2 ft",
+      "body": "PICKUP",
+      "fuel": "Gasoline",
+      "engine": "V8, HEMI, 5.7 LITER",
+      "color": "Gray",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 32999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202611-73e23edd9dbc4204bd82c6ea14a8becd.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-fd34dfe642744fcca8d561537ae7f10b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-86b63f17b39c448db7537d60820e6a0b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-d0aa3f1ead4a4ac58248986d2906a40e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-2283d55ebd40466f8140960a3ea8833b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-c75f8699d93b422899247d725b9a934d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-3992162c98da44ee9d1ce445a1b977cd.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-64d89a8b0c384e729f7b73d82b69e3ac.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-33e4519327c94c74a740ad434f3f4d12.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-97c48cd74590468d9fc48a9c8209e7a8.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-b9c22052029d4d268212b05d02f01044.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-f1e86dd7f6134685bd46f1676b451bd0.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "1C6SRFKT5KN640789",
@@ -449,7 +702,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-4fa9f7cd3fdf4886bf344f7a4a3caad6.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b0001e69e2304775859803aee18f9f7e.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d08ede6d6b904df3af49ee7009717dbe.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1GCPYFEL6LZ342033",
@@ -491,7 +745,128 @@
         "https://imagescf.dealercenter.net/640/480/202610-727fa3776f834d21802ac6a877220420.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-5dfed8e0b3634ca1afc089717515a7fb.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-8a973a2d5d0544c7a39b1a873b3a8b34.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "1GCPYFED5MZ131870",
+      "stock": "131870",
+      "url": "https://www.velocceauto.com/inventory/chevrolet/silverado-1500-crew-cab/131870/",
+      "imageCount": 12,
+      "name": "2021 CHEVROLET SILVERADO 1500 CREW CAB",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$29,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 118901,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2021,
+      "make": "Chevrolet",
+      "model": "Silverado 1500 Crew Cab",
+      "title": "2021 Chevrolet Silverado 1500 Crew Cab LT Trail Boss Pickup 4D 5 3/4 ft",
+      "body": "PICKUP",
+      "fuel": "Gasoline",
+      "engine": "V8, ECOTEC3, DFM, 5.3 LITER",
+      "color": "Black",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 29999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202610-6d96db37bbc342c198247a3260cdd235.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-bc489160f6c94ab2b5cd799254de5b06.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-3f148787868c4a3f8f47f59a7a1baa89.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-5ffe79cc394d46bfa1e9f0d51cdb67bf.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-6dc73b915bc94c47a3aaf1054a7359d6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-bbe250c9fb60472ba5a5bf2dd50b777b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-3f415bdea1404ef391c6bd05afd8e3c6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-376bf0812580492385e504fc0ad14cff.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-b40b71e7740046b49a661e36682224c5.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-87974c74d5b54be19ac809762ff716b9.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-2ec55766da2c4e28bf530fd5a9cf632e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-1a736206fd8c48ecaad94adeb3f6b396.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "1FTEW1E4XKFC00521",
+      "stock": "C00521",
+      "url": "https://www.velocceauto.com/inventory/ford/f150-supercrew-cab/c00521/",
+      "imageCount": 10,
+      "name": "2019 FORD F150 SUPERCREW CAB",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$29,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 94710,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2019,
+      "make": "Ford",
+      "model": "F150 Supercrew Cab",
+      "title": "2019 Ford F150 Supercrew Cab Lariat Pickup 4D 5 1/2 ft",
+      "body": "PICKUP",
+      "fuel": "Gasoline",
+      "engine": "V6, ECOBOOST, TWIN TURBO, 3.5 LITER",
+      "color": "Gray",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 29999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202611-9068c35faa5c47b094b2c8b0d27ba74d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-ab12a0857c1a416b96900e2c498c927c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-14c743b67bd248cf8407388605ea47e7.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-27b70e5c411542548f1b701e832f9d61.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-f4c44a026feb401c9123a8a661e6061f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-d859be10b4f448bdacdae357db54b436.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-d8c65bc4e8d54383ad8b5ff7f2a0b707.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-bf4f797c65484e8493716d116154dd9f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-0a09a7b1673941088510a6b0ea36b32f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-863eb3a95e2a4b8a96f7db35862eefcd.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "1C6SRFHTXKN512281",
+      "stock": "512281",
+      "url": "https://www.velocceauto.com/inventory/ram/1500-crew-cab/512281/",
+      "imageCount": 11,
+      "name": "2019 RAM 1500 CREW CAB",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$28,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 129636,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2019,
+      "make": "RAM",
+      "model": "1500 Crew Cab",
+      "title": "2019 RAM 1500 Crew Cab Limited Pickup 4D 5 1/2 ft",
+      "body": "PICKUP",
+      "fuel": "Gasoline",
+      "engine": "V8, HEMI, 5.7 LITER",
+      "color": "Red",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 28999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202610-a1c7ba85a11b44a8b9ff097c17750a06.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-7e2832fdfd4f465f9ccc514d15d80eff.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-fa7514f2588147699e5f2df4e87accf9.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-d04d95a21dc240de99fc5e153d81f790.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-4c045e56d4794a49af3ba2e7be2b8654.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-2c3136b7e349452cb64bb6134bc72944.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-b2aaa24a19c447da9148bdf8edcbe070.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-442a17252bc641e5a66ef02aa3b3272b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-47179d2d08b4459f8ebda15c51892191.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-15fbd4d2463140af8fa14c28c040f2f6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-18a10c4252b14e33a22e6dc9fcb9e7a7.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "1C6SRFLT5KN839078",
@@ -545,7 +920,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-ed79c3c144fc48df927187b3a38276a6.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-de27591c892d41559be1ffdb7b3bd2f5.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-85e6631b93d044e5b83bb9d9d1227b34.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "5UX43DP06P9P16573",
@@ -587,7 +963,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-fe65141bd6cb4602b484000b1a8914cf.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-7fec1ffc17704c32b4423c3f5cc1e8fe.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-11a7f714d06b48ef856443d41151f78d.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1GCPTBEK0R1133800",
@@ -641,7 +1018,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-06e5076eba6e41ed8c86c30dc74151f9.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-f3ba5a18e61c4b3aa8bd5cc18f0de253.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-fc0ce34b26ef4432a22bff4418c40482.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1C6RREFTXPN545526",
@@ -695,7 +1073,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-bb718f030dff4a8399fc6d4b589e8b11.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-32c848d8ad91434394506a8d51fc0dfc.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-350c4e459038411483264da2f49bfdec.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1FTBR1C82PKA61547",
@@ -733,7 +1112,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-34d44afef9344a75bcfaac8c4cc55c8d.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-275397e25d504f7d82321b38350d402b.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-8a560c7829f64aac9ee63a6a9c3adb96.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1C6SRFHT0KN508319",
@@ -770,7 +1150,48 @@
         "https://imagescf.dealercenter.net/640/480/202611-39dfb0f9fd1f4d6a9eeae9269fa733b3.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-4c4d76091d6148d7815a18554500821f.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-929e378b98364f0ca077b4d46c78a8cf.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "1FT7X2BN6NEC42252",
+      "stock": "C42252",
+      "url": "https://www.velocceauto.com/inventory/ford/f250-super-duty-super-cab/c42252/",
+      "imageCount": 11,
+      "name": "2022 FORD F250 SUPER DUTY SUPER CAB",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$26,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 148562,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2022,
+      "make": "Ford",
+      "model": "F250 Super Duty Super Cab",
+      "title": "2022 Ford F250 Super Duty Super Cab XL Pickup 4D 8 ft",
+      "body": "PICKUP",
+      "fuel": "Gasoline",
+      "engine": "V8, 7.3 LITER",
+      "color": "White",
+      "interior": "Gray",
+      "mpg": "",
+      "priceValue": 26999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202610-7b1144eef60c4146bd4796bf4669f702.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-6b35e7ead5e14b8fa00c88bc21ed8a3b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-cb189634bb344427942270d5aec6afbe.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-c7b51b346fde41639186f9e6038f205f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-8320e21d94824425acb02b61e26e3e39.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-7c241003224c42448eebfab2b19b8c0e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-5a3d19987de4422192fbd59faca05d68.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-df3783f8e78349c58c76d9acb9f138b3.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-742b00501e894f02baf3460bafbca619.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-1723df33c9394f68951735f3ff535bf7.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-25b74183a7404b5584ced9b578d4339b.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "1FTEW1CP0NKE75243",
@@ -816,7 +1237,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-ec3c8f9973f744dbafde5b6cc6261085.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3baf8d6e656740ccbb995c4733af6d20.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-64a4254f7b9c44f7a22fb5f4d927b62b.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "3C6URVJG3KE551816",
@@ -877,7 +1299,8 @@
         "https://imagescf.dealercenter.net/640/480/202606-4033a71b4b674ac58c1cd1960390dc07.jpg",
         "https://imagescf.dealercenter.net/640/480/202606-75d7606145f6406188f4fba0bb9491fd.jpg",
         "https://imagescf.dealercenter.net/640/480/202606-c3a79403e63642638448b40b5daab145.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "3C6UR4CL7GG386966",
@@ -914,7 +1337,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-45efb898e8c446b5bcd04e2c33c2d806.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-32614bd21cf64c0e96e1d899aae49f1e.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-55458a4c4db241d1aa0c0e480f953d62.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1FTYR3XM7KKB78580",
@@ -952,7 +1376,8 @@
         "https://imagescf.dealercenter.net/640/480/202608-72b32785f3ba47bea691bb3f32174b64.jpg",
         "https://imagescf.dealercenter.net/640/480/202608-cd0c764b94614f4e84487cd26da1a512.jpg",
         "https://imagescf.dealercenter.net/640/480/202608-3bda5ee8a2e841f598ea51fb1915d3eb.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "3C6URVJG3LE108051",
@@ -1002,7 +1427,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-33ccf5ef9609498f951e861e1ed3dd03.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-752555e92820404e85fab3ab4ddc1995.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-93a7faa996054fb0b56bc545cec91634.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1GKS2HKJ0LR197473",
@@ -1035,12 +1461,50 @@
         "https://imagescf.dealercenter.net/640/480/202610-e9614384f73b4000a36a67eac1a639e8.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b215e993200d4972bb8d119b4eb3b227.jpg",
         "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-aeb9d5524c594afcb6a2daeb146da302.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-db86f892e4044aa0ab86550090d7987b.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-9c3947c0e10d40f98a42cc30496ec281.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-aeb9d5524c594afcb6a2daeb146da302.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-f62f2edcc71d456ea74661d720e4abb4.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d22b371bccf1472f86c76330f0828181.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "3C6MRVJG3ME557148",
+      "stock": "557148",
+      "url": "https://www.velocceauto.com/inventory/ram/promaster-cargo-van/557148/",
+      "imageCount": 8,
+      "name": "2021 RAM PROMASTER CARGO VAN",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$21,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 89323,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "FWD",
+      "year": 2021,
+      "make": "RAM",
+      "model": "Promaster Cargo Van",
+      "title": "2021 RAM Promaster Cargo Van 3500 High Roof Extended Van 3d",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "V6, VVT, 3.6 LITER",
+      "color": "Blue",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 21999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202606-4561518035394efb936ebdd74101a4db.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-558f280bff67447eb477fce9cbb4fd14.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-0e94ebd7d8bd4d72812144f0c4272f5a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-62dc3fae1da640e69766909c68053975.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-a705417e29fe4fd9b21c192c692a1749.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-3aa9b95aa9a44634bdbfbc5eb5025273.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-0b2109511cd84dc59f50df64f5ad8805.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-9b48ec62f0404940b4d97c0cfea91762.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "1FTBR1Y82LKB79777",
@@ -1083,7 +1547,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-8509c0bd7ba44f119b11de4820b0f5d0.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-2e5763c0337d49e387ebb82ed2dcf9b4.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-ba35433c4a8a4aff97052796dfcb0261.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1C6RR7MTXJS135851",
@@ -1118,7 +1583,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-bf1257f755b142daacd655faf0a56926.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3a1b45b87f4c4e4086bf1ad022a82e08.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-36c26bdc7045457980dc945fb84a2366.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1V2NR2CA3KC545931",
@@ -1173,7 +1639,60 @@
         "https://imagescf.dealercenter.net/640/480/202610-2ef4d698ce5e4f3b853f13d1226f20d5.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-8ea4d12cda84447d86653b71437ccd03.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-9795daf96e3e4354a6034b0603b343d9.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "3C6TRVDG9GE100372",
+      "stock": "100372",
+      "url": "https://www.velocceauto.com/inventory/ram/promaster-cargo-van/100372/",
+      "imageCount": 23,
+      "name": "2016 RAM PROMASTER CARGO VAN",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$16,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 133919,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "FWD",
+      "year": 2016,
+      "make": "RAM",
+      "model": "Promaster Cargo Van",
+      "title": "2016 RAM Promaster Cargo Van 2500 High Roof W/159\" Wb Van 3d",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "V6, VVT, 3.6 LITER",
+      "color": "White",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 16999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202610-481519ee46214077b855aecaaa308c60.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-395c17a8a44a4d24bee740820d461bfc.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-360c85873cba4a83a4f82bbf3bfc6da2.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-232634ab83094057b59554575c3d61d0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-a5a8b80d65724bd88651d92e29911e99.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-ad18f0cc4ff743c7ad8182276628f4d1.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-b0d3d8fd608c4f2393ff018264d2b11c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-34710e09d4304165acb29053d5572746.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-9c4f5bc695d24084893519e2b35bdb9e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-a7ae28cf31a14ce08becbe033b257036.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-bf880486690a4e13a9821246059785e7.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-1ccbf4c187bb4987bc4c95dc41e0fa84.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-8a111b522cf4415897d45663763093e7.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-091e03f4d9304655a27516413d465364.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-c2eae00efc6e4a87b0b9cd214bcbbf53.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-581de3ba8a7e461485962f255ea69fa1.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-62751b8aa3f8467f9fad85cbeda32f7e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-aac19af0c2e24252ae990209221a8f59.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-77022a5f4dd74c8f98bc32cb19b97b75.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-39b74fc1fd3644a18032e3f7a2777c86.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-62251890da214dd881e688662a79d8f1.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-4af16b75d90e4cab95158fc773872431.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e26279a772ec45a8bac5105e09f71542.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "1C6RR7KT0KS690974",
@@ -1227,7 +1746,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-33e82d0f0e3c4855b0cc251fa0fc5906.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-a5e59963173e4ab89ae592b66ee5d7b8.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-efc7d0c5a45c4cd4865bb174f0c77ed2.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "KMHLL4DG7SU863226",
@@ -1280,7 +1800,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-e931afa0f1904489b759909b095cf583.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-876a7ac0f2474ecbab5ef204b1afd31e.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-52d3a6beb1544b61a9701820b6b2b85f.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1FM5K8GT0HGD73990",
@@ -1334,7 +1855,206 @@
         "https://imagescf.dealercenter.net/640/480/202610-16ba63b067254c7989a8e213e2f2dcfb.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b73c43912f0647d0bb648071a78ecd3f.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-47c5d8a4679a4abebc1ac89b89433c51.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "1GKKNXLS4HZ212945",
+      "stock": "212945S4",
+      "url": "https://www.velocceauto.com/inventory/gmc/acadia/212945s4/",
+      "imageCount": 25,
+      "name": "2017 GMC ACADIA",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$13,990",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 113913,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "AWD",
+      "year": 2017,
+      "make": "GMC",
+      "model": "Acadia",
+      "title": "2017 GMC Acadia Denali Sport Utility 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "V6, 3.6 LITER",
+      "color": "-",
+      "interior": "-",
+      "mpg": "",
+      "priceValue": 13990,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202607-f918ac92384b407bb005323e6e0e3f9c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-b0cb0b6dcb5c4ba289e027efb367ccae.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-d2303ebdab3e4db1bdf75283f513ebbd.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-74acce593f084c9b9bf6254dfd548d09.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-85394c28fdac4ec6ae0bbdb71eca723d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-e2fda0ea34bf4c6ea1a871e336ddd8a8.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-07f772b7264346b8a214809b45e5eaf2.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-28cb29a93bd843148e3db2de3db93519.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-4e0e200a6b4a46aeb2f69a1f3034f4ef.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-fa9331a568fe4a03be936e76fda807f0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-99686553cd36445c87ac3d0e259fe244.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-055ce162fe594e32adeb0b9b1491b55b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-92b09062824b4f28919320fef9a635c1.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-5c1f097dbdb9444590ba6392422fbbed.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-78b031baf44f4dda9b64ca469711a575.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-c0d14ce043f74a5fbe6dc794db6f3051.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-04f4d371328846918d1ff8e2c3b4db9b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-45881964e74441a08761097fbaf67e08.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-d9766ee2d3c04b33b65e76f11efadb34.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-7d03b4332ed64d1882ba39a21cbb85bc.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-7c26dd39d03a4b48980dafcc045cdef1.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-61fe53a97cb241cd80bdcfe587eee2e0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-75bef3e514214544b912c911488feffb.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-9bf6fadb88a54816b1c7a4978c92b245.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-38a4bee4df234138bb906d584b6072bb.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "3VV2B7AX8LM154224",
+      "stock": "154224",
+      "url": "https://www.velocceauto.com/inventory/volkswagen/tiguan/154224/",
+      "imageCount": 25,
+      "name": "2020 VOLKSWAGEN TIGUAN",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$12,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 100460,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "AWD",
+      "year": 2020,
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "title": "2020 Volkswagen Tiguan SE R-line Black 4motion Sport Utility 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, TURBO, 2.0 LITER",
+      "color": "Gray",
+      "interior": "Gray",
+      "mpg": "",
+      "priceValue": 12999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202610-724f3896d0bb4d928b5bb3c3495763ed.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-8a27d3ff3b6e45158b869e9e1368549c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-3809835bbbd2438ca781bac72fade529.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-64c3c78cfe8341bb9cfc8e336190937e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e70a96d0bbd1477288d80181a2a57310.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-011efbff23d3456fa27dab8c81ad61b5.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-ea5ed82b5ebd4302a67ba2d50da38645.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-7e60735fa55948b58614cffe1d07253b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-61261d0b793c45f1b802db2439d99d8d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-05d0a14ac0ab4305b2752b2ae5ee7119.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-aedad2accc8041d0bba17f18e06c4217.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-3d2d27a242354665ade847837d5a8770.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-7558ad1486184888a92bf7a4acbf64cf.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-819bbffbde9c4e1bbe5d501b2659e598.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e9b7946f01044956825c0afdd45d2c2c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-ab88a952427f4db4bc25e3e42ad56e7d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-10b475a438854daa86ffbbfb7e04f7f5.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-c73fbae2c128427e9b71a02ae21caca6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-aa4fa9ffc7a042f8becf9bb093b305a4.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-7337bea9d7b54a1bafbd3c27469a0406.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e3f554fecd124b569141328ced078b6e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-ab42a4c416de4730852889478d1ed7b0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-5d59445a757547c2acb2f95c103affb4.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-7c1093461e8e4b399ce029d310e47139.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-149f279448be4df6bf8368ea73f49236.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "5NPE34AF2JH710836",
+      "stock": "JH710836",
+      "url": "https://www.velocceauto.com/inventory/hyundai/sonata/jh710836/",
+      "imageCount": 18,
+      "name": "2018 HYUNDAI SONATA",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$12,500",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 90132,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "FWD",
+      "year": 2018,
+      "make": "Hyundai",
+      "model": "Sonata",
+      "title": "2018 Hyundai Sonata Sel+ Sedan 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, 2.4 LITER",
+      "color": "-",
+      "interior": "-",
+      "mpg": "",
+      "priceValue": 12500,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202609-fc45b66a71c14c879256120163aa6512.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-e31806bf76274c6daf6e7a487690a99a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-ca57852867ff43379827f8792330bb9e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-1c591527ace34927bd2bf34892a368aa.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-437f0aa848ab4d82a96a2862831d005a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-fd5fe46ab8e14f8fa2a9a1d0c45ebbd5.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-cb59488a4a604c719f9f2294fd732a56.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-167c7cf7b25e4384853d398ded6132c9.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-8bf5b5a776814a22a1bbe7125380ca9b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-3abb06f804eb444abcd5702ca70e2a08.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-5d4eec20aaa745b1acdf87760be620a9.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-34436155c6cd4c2c87f3ddd5aa58c4d0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-49048509f2e74b6c8e2eabd656d41509.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-807cea46674e406bad4111fe27efa488.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-f33139902fa140d38af5f4d1be6459c4.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-f0ab7d3d3d25455eb27f51daa6b504da.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-67cad30433b94dce89184b4520977fc5.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-65493c7e806b4fb39e35eed8d3798350.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "3KPF24AD5ME339153",
+      "stock": "ME339153",
+      "url": "https://www.velocceauto.com/inventory/kia/forte/me339153/",
+      "imageCount": 14,
+      "name": "2021 KIA FORTE",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$12,420",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 88842,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "FWD",
+      "year": 2021,
+      "make": "Kia",
+      "model": "Forte",
+      "title": "2021 Kia Forte Lxs Sedan 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, 2.0 LITER",
+      "color": "-",
+      "interior": "-",
+      "mpg": "",
+      "priceValue": 12420,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202609-9274074df87147a3b1f60a7879eb16fd.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-3c42f1c7ec9c41dfbdef0f7a63626d95.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-dcc50d9dd47e48a9a03f84ff7dc6f131.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-3d398bff1c354116bd9dd6546ce3087d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-ff2535d6d9cc4352a4503e11e2f9a927.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-bcedefdb2f7a4472a2fabc0961c884f2.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-deecd4a7d6334b37845fd7305a22a4cc.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-2e9f3bf47a8a4ce0adfbcaff612db746.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-b244edc54f0b464ea3e7633170e96829.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-5c09aa13e12a42ca8512fe0a115a9fa0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-0774934fe71f40678ecf3d755f8a963a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-22e293331f2c4012b5d8c3391be07093.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-dce951290cdf42428477aca36ff91279.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-d34f6870e8964ac984dcae9500e5dcf5.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "1C6RR7VM3FS617298",
@@ -1366,7 +2086,97 @@
         "https://imagescf.dealercenter.net/640/480/202610-cc86ea59a6274072a97564177dd95c09.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-f11e548daac6452daa19898bf3882f7c.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-61789d82a5954d628c62bcbdeeb01495.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "2GKALSEK8E6320977",
+      "stock": "320977",
+      "url": "https://www.velocceauto.com/inventory/gmc/terrain/320977/",
+      "imageCount": 13,
+      "name": "2014 GMC TERRAIN",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$10,890",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 69900,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "2WD",
+      "year": 2014,
+      "make": "GMC",
+      "model": "Terrain",
+      "title": "2014 GMC Terrain Slt-1 Sport Utility 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, 2.4 LITER",
+      "color": "-",
+      "interior": "-",
+      "mpg": "",
+      "priceValue": 10890,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202606-6f8a297eaf834825966fa02767945a29.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-65e9a212feb94220a95733b3d9541715.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-751e42aee0f04a8987c1fe5ac11e3eb7.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-e71211076be94810902e758a33706c88.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-028248de20aa4dab83fc1370c4a84533.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-5d49e17e348a4aa886ead3e8136112ae.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-e2c2d3d915554122a51a11083dabea54.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-1a39330cc31344d48770eeb2935f7bfe.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-7d50457d1a174f3e86eed5f4d5c4bc87.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-1a2b618b36da40b6b8c0e03f6937376f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-6fe4af639aac4287b828fc75feee49e3.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-2e451cba0eab4dcfa2c77aea61349dee.jpg",
+        "https://imagescf.dealercenter.net/640/480/202606-7a76234545e54e9a9901aa0b62ed4e16.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "JA4AZ3A3XJZ057558",
+      "stock": "057558",
+      "url": "https://www.velocceauto.com/inventory/mitsubishi/outlander/057558/",
+      "imageCount": 18,
+      "name": "2018 MITSUBISHI OUTLANDER",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$9,490",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 114520,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "4WD",
+      "year": 2018,
+      "make": "Mitsubishi",
+      "model": "Outlander",
+      "title": "2018 Mitsubishi Outlander Es Sport Utility 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, 2.4 LITER",
+      "color": "Gray",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 9490,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202607-c68a590511a74e3ea87414ece4bf969c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-abeb8dbcd2f94c448328dbe85af6b4cb.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-9b9c9c982c694738bc3bcd062a841d36.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-2e436e6f91624daf9c930b35d33621fb.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-f84df2680569477e9d2fb163abcc31af.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-da792cc964b7486ca4e87fba14338c4c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-d5a53a55308f4b28a5d91cf7083aef76.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-ff2337767d5f4524a4100017c2044117.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-d3d25bce04b34f649d2b217be77187ad.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-6f5f5d91533d4c48b6897a1804e0c643.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-f0bb7faebb01413c85d98a25a51ba7b0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-65722c3eeec142848ec8b716495644ca.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-300ba9a91e1e4f41902c901f1defd8ce.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-0fa7795243764cb09d466a68e6ac1945.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-c750cfeaa92140d1bfcc18dcfb8d37db.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-9e46050a1ef44e1e92447968bb0b962e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-7f09c98051da4cd4b8b15263d1d459ef.jpg",
+        "https://imagescf.dealercenter.net/640/480/202607-e6082f549d0e478d9325167036aeba65.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "1C4PJMLB7LD526025",
@@ -1418,7 +2228,58 @@
         "https://imagescf.dealercenter.net/640/480/202610-a0086de012ce4b33b35c22235a054193.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-ca30715f6a1e42ecb5dda275a07ee4d4.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-70eac314fee24df987a68e92bc769630.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "2C3CA6CT5BH583042",
+      "stock": "583042",
+      "url": "https://www.velocceauto.com/inventory/chrysler/300/583042/",
+      "imageCount": 21,
+      "name": "2011 CHRYSLER 300",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$8,990",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 107909,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "RWD",
+      "year": 2011,
+      "make": "Chrysler",
+      "model": "300",
+      "title": "2011 Chrysler 300 300c Sedan 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "V8, HEMI, 5.7 LITER",
+      "color": "-",
+      "interior": "-",
+      "mpg": "",
+      "priceValue": 8990,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202608-8faf86e97f874151a8ed1137144e86b5.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-66232ae88a6b4af3a27daaf468aa1a33.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-756fe856122244fbb301216ff352253c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-0eb83e2e2992401d887dc4f597d5f2e9.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-fe8df5c72eb140ae93067edc1b8ef4a2.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-ab5872a067b84f57a189941ffda519c9.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-8bc2ab864f5c4e478d6416924ce206bb.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-c02606c09e944447be386b694991a14f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-55fc1b241c0e457695c317c11702787f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-271875badff44fbf8a625753eaac39ed.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-5d09ecc7355c43709e6538e22e654a5d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-1f220cff1cf14802a5193eb8fbca3651.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-c143f6a8c26f4501a9b436f27072cde1.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-55d8eeadcddd488e8688bf12b0e19cf6.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-876e2325ca644f4e95cab36478273d44.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-b6a94338e4e44377a926765f3413390a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-464779c69b444ae38d5dfef76978881d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-3485bb89399349509d974fa04914b997.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-198eed2757a7485c8695b8a5b8950fce.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-2d7ad95965d247b68bc3ed4b7bcecfac.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-6e579ebb94c6454f88fde611475fe1e4.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "5N1AT2MT5JC770413",
@@ -1467,7 +2328,8 @@
         "https://imagescf.dealercenter.net/640/480/202610-a1941c80f5c84349aa4ead868b8abb69.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d7781eea350f4d6ca26c03ae96e0f8d0.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d9bd5e33912640e2bdf5f8b294c6032d.jpg"
-      ]
+      ],
+      "loja": "summit"
     },
     {
       "vin": "5UXKR2C56F0H40261",
@@ -1521,7 +2383,130 @@
         "https://imagescf.dealercenter.net/640/480/202610-ae88f3a897294401a6578cec080d526a.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-7f0ffde3054b460b9d9f40a4edc69589.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-f6881187da32462eb95650fbfdfa36f7.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "KMHCT4AE5HU379051",
+      "stock": "U37905",
+      "url": "https://www.velocceauto.com/inventory/hyundai/accent/u37905/",
+      "imageCount": 6,
+      "name": "2017 HYUNDAI ACCENT",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$6,990",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 96060,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "FWD",
+      "year": 2017,
+      "make": "Hyundai",
+      "model": "Accent",
+      "title": "2017 Hyundai Accent SE Sedan 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, 1.6 LITER",
+      "color": "-",
+      "interior": "-",
+      "mpg": "",
+      "priceValue": 6990,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202609-a86d8fb32a114fb8b0bbe385a8064d81.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-9438cc92b0f7482a86601977bd7b89cc.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-f3f123bfd0e74a679f211f81360d7fa3.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-b409dbc112254ce48baceeba6e2fd684.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-6db900aebf934c799df03a318cb575ba.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-05e557e18477478db6ca49e8f643ad5c.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "1ZVBP8EMXC5217770",
+      "stock": "217770",
+      "url": "https://www.velocceauto.com/inventory/ford/mustang/217770/",
+      "imageCount": 16,
+      "name": "2012 FORD MUSTANG",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$6,990",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 115241,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "RWD",
+      "year": 2012,
+      "make": "Ford",
+      "model": "Mustang",
+      "title": "2012 Ford Mustang Convertible 2D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "V6, 3.7 LITER",
+      "color": "-",
+      "interior": "-",
+      "mpg": "",
+      "priceValue": 6990,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202608-95acfd64f3c4490ab831c1021ebc6313.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-0fc814d49ba545f1a6f92b1d7af72374.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-a9ed082f034446539b596ec8cf4485b0.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-26052da1fa7244378ab11153a3161a55.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-783d922db20844b291adbe0ab7e43996.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-fbe7c16995e94a659bb6b28c9ca3a4e1.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-f7c49f4fd506426a8cc1cbc90a3ccc84.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-7144f3e1c53847daa633e456dc82744b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-02812d9edaab42a5bc10b359e111d341.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-f9ccead924b243b6ba8dc212a53e9d92.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-17c561f83abd4fdfa2ae1bf552ca3508.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-10dbfa4b9d8444e9a0da2f872a788963.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-c04a70a8602a4903b63120a5b758fb8b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-228859fa6e654cabafc9bd22169e0268.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-d09e8513d1ed417b893949e8924e513b.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-eae7d20d8c654db09777d17736c71f27.jpg"
+      ],
+      "loja": "velocce"
+    },
+    {
+      "vin": "1G1PA5SH5E7449189",
+      "stock": "449189",
+      "url": "https://www.velocceauto.com/inventory/chevrolet/cruze/449189/",
+      "imageCount": 13,
+      "name": "2014 CHEVROLET CRUZE",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$6,890",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 88702,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "FWD",
+      "year": 2014,
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "title": "2014 Chevrolet Cruze LS Sedan 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, ECOTEC, 1.8L",
+      "color": "-",
+      "interior": "-",
+      "mpg": "",
+      "priceValue": 6890,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202608-7b847cbef1c049a7b65d1b23dec4ad2f.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-76f3f961f5f64579bb04be2d167c6064.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-240f3f2abadc4a7ca47750bf9760278e.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-7f4f0a3366574c399d2aba028725f3b8.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-e195f4734aa74b6f9ce8af2b4a106475.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-8e960f05379f4e5b91f208133a7c9c65.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-bb23ff5378dd480d971a33ea9f0c9996.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-a42d80f33a9d40c78c69443b876c5080.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-fc500c59013a49088f744e4a29fd077d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-3cf8b68299ac4838b90f1b4a80c7a198.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-d3f2bd67917a4175be40adb737e30cd4.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-774e501314ca405f986e986864df9504.jpg",
+        "https://imagescf.dealercenter.net/640/480/202608-b78d386cf6e24ac89ec48ff80bbcfe6d.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "1FTNE2EW1BDA93722",
@@ -1555,7 +2540,45 @@
         "https://imagescf.dealercenter.net/640/480/202610-6a5dbc42293e4821acda2ebe153dc601.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-cd1129a53b0443a5938e83d2f5297f93.jpg",
         "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg"
-      ]
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "1FMCU0JX4GUB31525",
+      "stock": "B31525",
+      "url": "https://www.velocceauto.com/inventory/ford/escape/b31525/",
+      "imageCount": 8,
+      "name": "2016 FORD ESCAPE",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "$5,999",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 181776,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "FWD",
+      "year": 2016,
+      "make": "Ford",
+      "model": "Escape",
+      "title": "2016 Ford Escape Titanium Sport Utility 4D",
+      "body": "",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, ECOBOOST, 1.6T",
+      "color": "Blue",
+      "interior": "Black",
+      "mpg": "",
+      "priceValue": 5999,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202610-99d53488d4d342f39e4424c26c0e5af7.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-4bb428bcb977462d9adeae549194aade.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-abd9b2dd0f294a52af44da9e6f78bc97.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-2400dd27da48440aa5ec96505d6b55e7.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-8f6cf25765994c8ca5e384b2dd1b343a.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-cc54ffb17ee04a1db24d78075b54d303.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-4ac69e60fda8483ab2b9282d2a71edcb.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-9be8966106b3459692b561dcec26597b.jpg"
+      ],
+      "loja": "velocce"
     },
     {
       "vin": "1FTYE1YM4FKB27168",
@@ -1588,8 +2611,50 @@
         "https://imagescf.dealercenter.net/640/480/202610-cd1129a53b0443a5938e83d2f5297f93.jpg",
         "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b215e993200d4972bb8d119b4eb3b227.jpg",
-        "https://imagescf.dealercenter.net/640/480/202603-0d57422c3f5449b9b1496b5f16b210e1.jpg"
-      ]
+        "https://imagescf.dealercenter.net/640/480/202603-0d57422c3f5449b9b1496b5f16b210e1.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-6aef07212428405ca19abc935b8a681d.jpg"
+      ],
+      "loja": "summit"
+    },
+    {
+      "vin": "JHMGK5H71GS005826",
+      "stock": "TR005826",
+      "url": "https://www.thesummitmotorsports.com/inventory/honda/fit/tr005826/",
+      "imageCount": 11,
+      "name": "2016 HONDA FIT",
+      "price": null,
+      "totalPrice": null,
+      "priceText": "Call For Price",
+      "wasPrice": null,
+      "dealerFee": null,
+      "mileage": 181331,
+      "transmission": "AUTOMATIC",
+      "drivetrain": "FWD",
+      "year": 2016,
+      "make": "Honda",
+      "model": "Fit",
+      "title": "2016 Honda Fit EX Hatchback 4D",
+      "body": "HATCHBACK",
+      "fuel": "Gasoline",
+      "engine": "4-CYL, I-VTEC, 1.5 LITER",
+      "color": "Silver",
+      "interior": "Black",
+      "mpg": "32/38",
+      "priceValue": null,
+      "photos": [
+        "https://imagescf.dealercenter.net/640/480/202609-6aef07212428405ca19abc935b8a681d.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-f53a1aef7d8a4ad7afc8046a51db4773.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-6da4f24000744677a0ff70e15e9d93ee.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-72ddadc22304471e942ba29d8ca18467.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-e1f8c07d81ce4cdca996825ce16f3be9.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-f0a808e515c4466e897c1164c0b4bdef.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-9752691e83bb47b49d2f73db7b0dddef.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-52476f05bb114c56a5987878e272deb4.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-72a4b51711d548feacae5909318323c3.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-6a1b141381e1446d9269e78eb2909ab2.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-b981475daa5d45c8bf831563596523b1.jpg"
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1C6SRFLT7LN419095",
@@ -1618,17 +2683,18 @@
       "priceValue": null,
       "photos": [
         "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-db026ee1b34342caa8e628a6626954e6.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3d60b1a11dc54ca785d05ebbcc976d90.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d033faed86174ae5a99bb6788cf0211c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-4b0ae599430f480391664078f01a81c8.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-5bb0a9a54d82420f973cd40a45bf4401.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3f8a57a63a6a4be3894073bf2c2ff106.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-a7e08d0e3133482dab2eac457818ea64.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-43ff329e0c0445b5b87f8e66fd86b45d.jpg",
-        "https://imagescf.dealercenter.net/640/480/202611-db026ee1b34342caa8e628a6626954e6.jpg"
-      ]
+        "https://imagescf.dealercenter.net/640/480/202610-43ff329e0c0445b5b87f8e66fd86b45d.jpg"
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1FTYE1YM4HKA47906",
@@ -1661,8 +2727,10 @@
         "https://imagescf.dealercenter.net/640/480/202610-cd1129a53b0443a5938e83d2f5297f93.jpg",
         "https://imagescf.dealercenter.net/640/480/202608-fb3643abc8c04ce388c4e43bcfa7cea9.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-b215e993200d4972bb8d119b4eb3b227.jpg",
-        "https://imagescf.dealercenter.net/640/480/202603-0d57422c3f5449b9b1496b5f16b210e1.jpg"
-      ]
+        "https://imagescf.dealercenter.net/640/480/202603-0d57422c3f5449b9b1496b5f16b210e1.jpg",
+        "https://imagescf.dealercenter.net/640/480/202609-6aef07212428405ca19abc935b8a681d.jpg"
+      ],
+      "loja": "summit"
     },
     {
       "vin": "1C6SRFHT6LN260689",
@@ -1691,17 +2759,18 @@
       "priceValue": null,
       "photos": [
         "https://imagescf.dealercenter.net/640/480/202512-a7d66eb3e9004306b6c2f7c89533ae13.jpg",
+        "https://imagescf.dealercenter.net/640/480/202611-db026ee1b34342caa8e628a6626954e6.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-cf14a3c17e654d528ba6d99ab78d6ee8.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3d60b1a11dc54ca785d05ebbcc976d90.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-d033faed86174ae5a99bb6788cf0211c.jpg",
+        "https://imagescf.dealercenter.net/640/480/202610-e9b2e94b9bf9425daba9141567a77452.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-4b0ae599430f480391664078f01a81c8.jpg",
         "https://imagescf.dealercenter.net/640/480/202611-5bb0a9a54d82420f973cd40a45bf4401.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-3f8a57a63a6a4be3894073bf2c2ff106.jpg",
         "https://imagescf.dealercenter.net/640/480/202610-a7e08d0e3133482dab2eac457818ea64.jpg",
-        "https://imagescf.dealercenter.net/640/480/202610-43ff329e0c0445b5b87f8e66fd86b45d.jpg",
-        "https://imagescf.dealercenter.net/640/480/202611-db026ee1b34342caa8e628a6626954e6.jpg"
-      ]
+        "https://imagescf.dealercenter.net/640/480/202610-43ff329e0c0445b5b87f8e66fd86b45d.jpg"
+      ],
+      "loja": "summit"
     }
   ]
 }
