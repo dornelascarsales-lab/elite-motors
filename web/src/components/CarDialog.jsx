@@ -52,7 +52,8 @@ export default function CarDialog({ car, onClose }) {
       <div className="skeuo-card border border-white/10 rounded-sm text-white grid grid-cols-1 md:grid-cols-5 max-h-[94dvh] overflow-y-auto overflow-x-hidden overscroll-contain">
         <div className="md:col-span-3 bg-black/50 flex flex-col min-w-0">
           <div className="relative aspect-[4/3] md:aspect-auto md:flex-1 md:min-h-[440px]">
-            {photos[photo] && <img src={photos[photo]} alt={`${car.title} — foto ${photo + 1}`} className="absolute inset-0 w-full h-full object-contain md:object-cover bg-black" />}
+            {/* 05/11: no computador a foto cortava (object-cover); agora mostra a foto inteira */}
+            {photos[photo] && <img src={photos[photo]} alt={`${car.title} — foto ${photo + 1}`} className="absolute inset-0 w-full h-full object-contain bg-black" />}
             {photos.length > 1 && (
               <>
                 <button aria-label="Foto anterior" onClick={() => { setPhoto((photo - 1 + photos.length) % photos.length); trackPhotoClick(car); }} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-sm bg-black/60 border border-white/10 hover:border-accent/50">
