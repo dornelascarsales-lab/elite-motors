@@ -55,3 +55,36 @@ for (const v of inv.vehicles || []) {
   n++;
 }
 console.log(`carro/: ${n} páginas de prévia`);
+
+// 11/11 (Eder): páginas de categoria (/pickups/, /suvs/, /vans/, /carros/) com prévia própria no WhatsApp;
+// abrem o site já filtrado (/?cat=pickup). Mesmo critério de web/src/lib/inventory.js (category).
+const catOf = v => { const b = (v.body || '').toUpperCase(); return (b === 'PICKUP' || b === 'CAB_CHASSIS') ? 'pickup' : b === 'SUV' ? 'suv' : (b === 'CARGO' || b === 'VAN') ? 'van' : 'car'; };
+const CATS = { pickups: ['pickup', 'Pickups'], suvs: ['suv', 'SUVs'], vans: ['van', 'Vans'], carros: ['car', 'Carros'] };
+for (const [slug, [cat, rotulo]] of Object.entries(CATS)) {
+  const lista = (inv.vehicles || []).filter(v => catOf(v) === cat && (v.photos || []).length);
+  const foto = lista.length ? grande(lista[0].photos[0]) : `${SITE}/og-home.jpg`;
+  const destino = `${SITE}/?cat=${cat}`;
+  const titulo = `${rotulo} à venda · Elite Motors, Orlando FL`;
+  const desc = `${lista.length} ${rotulo.toLowerCase()} com fotos, ficha e preço. Entregamos na porta.`;
+  const html = `<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+<title>${esc(titulo)}</title>
+<meta name="description" content="${esc(desc)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Elite Motors · Orlando, FL">
+<meta property="og:title" content="${esc(titulo)}">
+<meta property="og:description" content="${esc(desc)}">
+<meta property="og:url" content="${SITE}/${slug}/">
+<meta property="og:image" content="${esc(foto)}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="${esc(destino)}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>location.replace(${JSON.stringify(destino)});</script>
+</head><body style="background:#0b0b0b;color:#eee;font-family:system-ui;text-align:center;padding:40px">
+<p><a href="${esc(destino)}" style="color:#d4a843">${esc(rotulo)}</a></p>
+</body></html>
+`;
+  fs.rmSync(path.join(ROOT, slug), { recursive: true, force: true });
+  fs.mkdirSync(path.join(ROOT, slug), { recursive: true });
+  fs.writeFileSync(path.join(ROOT, slug, 'index.html'), html);
+  console.log(`${slug}/: ${lista.length} carros`);
+}

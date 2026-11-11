@@ -23,7 +23,25 @@ import { trackPageVisit, trackWhatsApp } from './lib/track';
 export default function App() {
   const { t } = useLang();
   const inv = useInventory();
-  const [filters, setFilters] = useState({ cat: 'all', q: '', onlySale: false, sort: 'priceDesc', band: null });
+  // 11/11 (Eder): a categoria e a busca vão para o link (?cat=pickup&busca=f150), pra mandar só as pickups, por ex.
+  const [filters, setFilters] = useState(() => {
+    const qs = new URLSearchParams(window.location.search);
+    const c = (qs.get('cat') || '').toLowerCase().replace(/^sedans?$|^carros?$/, 'car').replace(/s$/, '');
+    return { cat: ['pickup', 'suv', 'van', 'car'].includes(c) ? c : 'all', q: qs.get('busca') || '', onlySale: false, sort: 'priceDesc', band: null };
+  });
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    if (filters.cat !== 'all') url.searchParams.set('cat', filters.cat); else url.searchParams.delete('cat');
+    if (filters.q.trim()) url.searchParams.set('busca', filters.q.trim()); else url.searchParams.delete('busca');
+    if (url.href !== window.location.href) window.history.replaceState(null, '', url);
+  }, [filters.cat, filters.q]);
+  // quem chega por um link de categoria cai direto na vitrine
+  useEffect(() => {
+    if (!inv.vehicles.length) return;
+    const qs = new URLSearchParams(window.location.search);
+    if ((qs.has('cat') || qs.has('busca')) && !qs.has('carro') && !window.location.pathname.startsWith('/carro/'))
+      setTimeout(() => document.getElementById('grade')?.scrollIntoView({ block: 'start' }), 300);
+  }, [inv.vehicles.length > 0]);
   const [open, setOpen] = useState(null);
 
   useEffect(() => { trackPageVisit(); }, []);
