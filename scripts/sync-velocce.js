@@ -122,9 +122,30 @@ async function main() {
   const foraDoSite = velocce.filter(v => !v.photos || !v.photos.length);
   velocce = velocce.filter(v => v.photos && v.photos.length);
   if (foraDoSite.length) console.log(`  fora do site por enquanto (sem foto na Velocce): ${foraDoSite.map(v => v.name).join(', ')}`);
+  // 16/11: a Velocce não manda o tipo de carroceria; sem isso as SUVs caíam em "Carros" no filtro
+  velocce = velocce.map(v => ({ ...v, body: tipoDe(v) }));
   const vehicles = [...summit, ...velocce].sort((a, b) => (b.priceValue || 0) - (a.priceValue || 0));
   fs.writeFileSync(OUT_PATH, JSON.stringify({ ...inv, updatedAt: new Date().toISOString(), count: vehicles.length, vehicles }, null, 2));
   console.log(`inventory.json: ${summit.length} da Summit + ${velocce.length} da Velocce = ${vehicles.length} carros`);
 }
 
 main().catch(err => { console.error('Sync da Velocce falhou:', err); process.exit(0); });   // nunca derruba o sync da Summit
+
+// A Summit manda o tipo de carroceria; a Velocce não. Para a Velocce, deduz pelo modelo.
+const PICKUP = /crew ?cab|super ?crew|super ?cab|regular cab|double cab|quad cab|mega cab|access cab|king cab|pickup|tacoma|tundra|ranger|colorado|canyon|frontier|titan\b|gladiator|maverick|ridgeline|silverado|sierra|f-?150|f-?250|f-?350|cab ?& ?chassis/i;
+const CARGO = /transit|promaster|express|savana|sprinter|metris|nv200|nv ?cargo|cargo/i;
+const SUV = /escape|explorer|expedition|bronco|edge|tahoe|suburban|yukon|traverse|equinox|trailblazer|blazer|trax|grand cherokee|cherokee|wrangler|compass|renegade|durango|rav4|highlander|4runner|sequoia|cr-?v|hr-?v|pilot|passport|rogue|murano|pathfinder|armada|kicks|tucson|santa fe|palisade|kona|sorento|telluride|sportage|seltos|outback|forester|ascent|cx-|x1|x3|x5|x7|q5|q7|gl[abcs]|gle|mdx|rdx|escalade|navigator|aviator|atlas|tiguan|range rover|discovery|defender|macan|cayenne|enclave|encore|envision|acadia|terrain|journey|pacifica|odyssey|sienna|carnival/i;
+function tipoDe(v) {
+  const b = (v.body || '').toUpperCase();
+  if (b) return b;
+  const m = `${v.model} ${v.title}`;
+  // 1º: o tipo que a própria Velocce escreve no fim do título (ex.: "Sport Utility 4D", "Pickup 4D", "Sedan 4D", "Van 3d")
+  if (/sport utility|\bsuv\b/i.test(v.title || '')) return 'SUV';
+  if (/\bpickup\b/i.test(v.title || '')) return 'PICKUP';
+  if (/\bvan\b/i.test(v.title || '')) return 'CARGO';
+  if (/\b(sedan|coupe|hatchback|convertible|wagon)\b/i.test(v.title || '')) return 'SEDAN';
+  if (CARGO.test(m)) return 'CARGO';
+  if (PICKUP.test(m)) return 'PICKUP';
+  if (SUV.test(m)) return 'SUV';
+  return 'SEDAN';
+}
